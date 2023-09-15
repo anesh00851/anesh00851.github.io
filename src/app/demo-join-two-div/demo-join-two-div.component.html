@@ -9,24 +9,24 @@
     </mat-grid-tile>
     <mat-grid-tile [rowspan]="3">
         <mat-list>
-            <mat-list-item [style.height.px]="currentScreenSize == 'Small' ? 34 : 48">
+            <mat-list-item [style.height.px]="currentScreenSize == 'Small' || 'Medium' || 'Medium' ? 34 : 48">
               <span matListItemTitle>X: </span>
               <span matListItemLine>{{x}}</span>
               <span matListItemLine>ScreenSize - {{currentScreenSize}}</span>
             </mat-list-item>
-            <mat-list-item [style.height.px]="currentScreenSize == 'Small' ? 34 : 48">
+            <mat-list-item [style.height.px]="currentScreenSize == 'Small' || 'Medium' ? 34 : 48">
               <span matListItemTitle>Y: </span>
               <span matListItemLine>{{y}}</span>
             </mat-list-item>
-            <mat-list-item [style.height.px]="currentScreenSize == 'Small' ? 34 : 48">
+            <mat-list-item [style.height.px]="currentScreenSize == 'Small' || 'Medium' ? 34 : 48">
               <span matListItemTitle>Width: </span>
               <span matListItemLine>{{width}}</span>
             </mat-list-item>
-            <mat-list-item [style.height.px]="currentScreenSize == 'Small' ? 34 : 48">
+            <mat-list-item [style.height.px]="currentScreenSize == 'Small' || 'Medium' ? 34 : 48">
                 <span matListItemTitle>Height: </span>
                 <span matListItemLine>{{height}}</span>
               </mat-list-item>
-              <mat-list-item [style.height.px]="currentScreenSize == 'Small' ? 34 : 48">
+              <mat-list-item [style.height.px]="currentScreenSize == 'Small' || 'Medium' ? 34 : 48">
                 <span matListItemTitle>Top: </span>
                 <span matListItemLine>{{top}}</span>
               </mat-list-item>
