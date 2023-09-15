@@ -1,0 +1,35 @@
+<mat-grid-list cols="1" rowHeight="10vh">
+    <mat-grid-tile [rowspan]="7" class="example-boundary1">
+        <div #div1 class="example-box" cdkDragBoundary=".example-boundary1" cdkDrag>
+            Div1
+        </div>
+        <div class="example-box" cdkDragBoundary=".example-boundary1" cdkDrag>
+            Div2
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile [rowspan]="3">
+        <mat-list>
+            <mat-list-item [style.height.px]="currentScreenSize == 'Small' ? 34 : 48">
+              <span matListItemTitle>X: </span>
+              <span matListItemLine>{{x}}</span>
+              <span matListItemLine>ScreenSize - {{currentScreenSize}}</span>
+            </mat-list-item>
+            <mat-list-item [style.height.px]="currentScreenSize == 'Small' ? 34 : 48">
+              <span matListItemTitle>Y: </span>
+              <span matListItemLine>{{y}}</span>
+            </mat-list-item>
+            <mat-list-item [style.height.px]="currentScreenSize == 'Small' ? 34 : 48">
+              <span matListItemTitle>Width: </span>
+              <span matListItemLine>{{width}}</span>
+            </mat-list-item>
+            <mat-list-item [style.height.px]="currentScreenSize == 'Small' ? 34 : 48">
+                <span matListItemTitle>Height: </span>
+                <span matListItemLine>{{height}}</span>
+              </mat-list-item>
+              <mat-list-item [style.height.px]="currentScreenSize == 'Small' ? 34 : 48">
+                <span matListItemTitle>Top: </span>
+                <span matListItemLine>{{top}}</span>
+              </mat-list-item>
+          </mat-list>
+    </mat-grid-tile>
+</mat-grid-list>
