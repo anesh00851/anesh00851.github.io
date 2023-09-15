@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { BreakpointObserver, Breakpoints, } from '@angular/cdk/layout';
 import { Subject, takeUntil } from 'rxjs';
+import { getLocaleDirection } from '@angular/common';
 
 @Component({
   selector: 'app-demo-join-two-div',
@@ -67,15 +68,25 @@ export class DemoJoinTwoDivComponent implements OnInit {
       this.top = rect.top;
     });
 
-    this.div1.nativeElement.addEventListener("mouseup", (event: any) => {
-      let rect = event.target.getBoundingClientRect();
-      this.x = rect.x;
-      this.y = rect.y;
-      this.width = rect.width;
-      this.height = rect.height;
-      this.top = rect.top;
+    this.div1.nativeElement.addEventListener("mousedown", (event: any) => {
+      window.onmousemove=(e)=>{
+        this.getRect(event);
+      }
     });
 
+    this.div1.nativeElement.addEventListener("mouseup", (event: any) => {
+      window.removeEventListener('mousemove',this.getRect);
+    });
+
+  }
+
+  getRect(event:any){
+    let rect = event.target.getBoundingClientRect();
+    this.x = rect.x;
+    this.y = rect.y;
+    this.width = rect.width;
+    this.height = rect.height;
+    this.top = rect.top;
   }
 
 }
