@@ -66,6 +66,16 @@ export class DemoJoinTwoDivComponent implements OnInit {
       this.height = rect.height;
       this.top = rect.top;
     });
+
+    this.div1.nativeElement.addEventListener("mouseup", (event: any) => {
+      let rect = event.target.getBoundingClientRect();
+      this.x = rect.x;
+      this.y = rect.y;
+      this.width = rect.width;
+      this.height = rect.height;
+      this.top = rect.top;
+    });
+
   }
 
 }
