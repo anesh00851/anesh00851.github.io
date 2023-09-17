@@ -1,1 +1,47 @@
-<app-demo-join-two-div></app-demo-join-two-div>
+<mat-toolbar color="primary">
+    <span>AneshAngularDemo-{{currentScreenSize}}</span>
+    <span class="example-spacer"></span>
+    <button (click)="toggle(sidenav)" mat-icon-button class="example-icon"
+        aria-label="Example icon-button with menu icon">
+        <mat-icon *ngIf="!togglemobilemenu">menu</mat-icon>
+        <mat-icon *ngIf="togglemobilemenu">close</mat-icon>
+    </button>
+</mat-toolbar>
+
+<mat-nav-list class="mobilemenu" *ngIf="togglemobilemenu" [style.top.px]="currentScreenSize == 'Small'?65:58">
+    <mat-list-item>
+        <a mat-list-item routerLink="managementheirarchy" routerLinkActive="active-link">Management Heirarchy</a>
+    </mat-list-item>
+    <mat-list-item>
+        <a mat-list-item routerLink="objectdescription" routerLinkActive="active-link">Object Description</a>
+    </mat-list-item>
+    <mat-list-item>
+        <a mat-list-item routerLink="cognitiveanalysis" routerLinkActive="active-link">Cognitive Analysis</a>
+    </mat-list-item>
+    <mat-list-item>
+        <a mat-list-item routerLink="glimpseoftomorrow" routerLinkActive="active-link">Glimpse of Tomorrow</a>
+    </mat-list-item>
+</mat-nav-list>
+
+<mat-sidenav-container class="example-container" [style.top.px]="currentScreenSize == 'Small'?65:58">
+    <mat-sidenav #sidenav mode="side">
+        <mat-nav-list>
+            <mat-list-item routerLink="managementheirarchy" routerLinkActive="active-link">
+                <a mat-list-item>Management Heirarchy</a>
+            </mat-list-item>
+            <mat-list-item routerLink="objectdescription" routerLinkActive="active-link">
+                <a mat-list-item>Object Description</a>
+            </mat-list-item>
+            <mat-list-item routerLink="cognitiveanalysis" routerLinkActive="active-link">
+                <a mat-list-item>Cognitive Analysis</a>
+            </mat-list-item>
+            <mat-list-item routerLink="glimpseoftomorrow" routerLinkActive="active-link">
+                <a mat-list-item>Glimpse of Tomorrow</a>
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

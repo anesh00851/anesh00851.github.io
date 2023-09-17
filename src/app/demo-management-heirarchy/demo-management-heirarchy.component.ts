@@ -1,14 +1,13 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { BreakpointObserver, Breakpoints, } from '@angular/cdk/layout';
 import { Subject, takeUntil } from 'rxjs';
-import { getLocaleDirection } from '@angular/common';
 
 @Component({
-  selector: 'app-demo-join-two-div',
-  templateUrl: './demo-join-two-div.component.html',
-  styleUrls: ['./demo-join-two-div.component.scss']
+  selector: 'app-demo-management-heirarchy',
+  templateUrl: './demo-management-heirarchy.component.html',
+  styleUrls: ['./demo-management-heirarchy.component.scss']
 })
-export class DemoJoinTwoDivComponent implements OnInit {
+export class DemoManagementHeirarchyComponent implements OnInit {
 
   destroyed = new Subject<void>();
   currentScreenSize!: string;

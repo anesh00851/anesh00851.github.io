@@ -1,20 +1,35 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DemoJoinTwoDivComponent } from './demo-join-two-div/demo-join-two-div.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatRippleModule} from '@angular/material/core';
+import { DemoManagementHeirarchyComponent } from './demo-management-heirarchy/demo-management-heirarchy.component';
+import { DemoObjectDescriptionComponent } from './demo-object-description/demo-object-description.component';
+import { DemoCognitiveAnalysisComponent } from './demo-cognitive-analysis/demo-cognitive-analysis.component';
+import { DemoGlimpseOfTomorrowComponent } from './demo-glimpse-of-tomorrow/demo-glimpse-of-tomorrow.component';
+import { DemoPageNotFoundComponentComponent } from './demo-page-not-found-component/demo-page-not-found-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DemoJoinTwoDivComponent
+    DemoManagementHeirarchyComponent,
+    DemoObjectDescriptionComponent,
+    DemoCognitiveAnalysisComponent,
+    DemoGlimpseOfTomorrowComponent,
+    DemoPageNotFoundComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +39,15 @@ import {MatListModule} from '@angular/material/list';
     MatGridListModule,
     MatCardModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatRadioModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

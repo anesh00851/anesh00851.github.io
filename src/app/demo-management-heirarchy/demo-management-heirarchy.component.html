@@ -1,0 +1,13 @@
+<mat-grid-list [cols]="currentScreenSize == 'XSmall' ? 1 : 2" rowHeight="10vh">
+    <mat-grid-tile [rowspan]="currentScreenSize == 'Small' || currentScreenSize == 'Medium' || currentScreenSize == 'Large' || currentScreenSize == 'XLarge' ? 10 : 5" class="example-boundary1">
+        <div #div1 class="example-box" cdkDragBoundary=".example-boundary1" cdkDrag>
+            Div1
+        </div>
+        <div class="example-box" cdkDragBoundary=".example-boundary1" cdkDrag>
+            Div2
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="visualisebox" [rowspan]="currentScreenSize == 'Small' || currentScreenSize == 'Medium' || currentScreenSize == 'Large' || currentScreenSize == 'XLarge' ? 10 : 5">
+        
+    </mat-grid-tile>
+</mat-grid-list>
