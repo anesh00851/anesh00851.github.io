@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'objectdescription',component:DemoObjectDescriptionComponent},
   { path: 'cognitiveanalysis',component:DemoCognitiveAnalysisComponent},
   { path: 'glimpseoftomorrow',component:DemoGlimpseOfTomorrowComponent},
-  { path: '', redirectTo: '/managementheirarchy', pathMatch: 'full' },
+  { path: '', redirectTo: 'managementheirarchy', pathMatch: 'full' },
   { path: '**', component: DemoPageNotFoundComponentComponent }
 ];
 
