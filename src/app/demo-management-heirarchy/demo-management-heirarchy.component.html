@@ -1,10 +1,69 @@
 <mat-grid-list [cols]="currentScreenSize == 'XSmall' ? 1 : 2" rowHeight="10vh">
-    <mat-grid-tile [rowspan]="currentScreenSize == 'Small' || currentScreenSize == 'Medium' || currentScreenSize == 'Large' || currentScreenSize == 'XLarge' ? 10 : 5" class="example-boundary1">
-        <div #div1 class="example-box" cdkDragBoundary=".example-boundary1" cdkDrag>
-            Div1
-        </div>
-        <div class="example-box" cdkDragBoundary=".example-boundary1" cdkDrag>
-            Div2
+    <mat-grid-tile class="formfieldbox" [rowspan]="currentScreenSize == 'Small' || currentScreenSize == 'Medium' || currentScreenSize == 'Large' || currentScreenSize == 'XLarge' ? 10 : 5">
+        <div class="container">
+          <div>
+            <ul class="titleul">
+              <li>Name</li>
+              <li>Department</li>
+              <li>Designation</li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="employeelistul">
+              <li>Anesh1</li>
+              <li>IT1</li>
+              <li>AngularDeveloper1</li>
+              <li><mat-icon (click)="openmodal()" matTooltip="Edit" matTooltipPosition="above">edit</mat-icon><mat-icon (click)="openmodal()" matTooltip="Delete" matTooltipPosition="above">delete</mat-icon></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="employeelistul">
+              <li>Anesh2</li>
+              <li>IT2</li>
+              <li>AngularDeveloper2</li>
+              <li><mat-icon (click)="openmodal()" matTooltip="Edit" matTooltipPosition="above">edit</mat-icon><mat-icon (click)="openmodal()" matTooltip="Delete" matTooltipPosition="above">delete</mat-icon></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="employeelistul">
+              <li>Anesh3</li>
+              <li>IT3</li>
+              <li>AngularDeveloper3</li>
+              <li><mat-icon  (click)="openmodal()" matTooltip="Edit" matTooltipPosition="above">edit</mat-icon><mat-icon  (click)="openmodal()" matTooltip="Delete" matTooltipPosition="above">delete</mat-icon></li>
+            </ul>
+          </div>
+          <div (click)="hidemodal()" #myModal class="modal-container">
+            <div (click)="stoppropagation($event)" class="modal-content">
+              <span (click)="Closemodal()" class="close">&times;</span>
+              <div class="matformfieldcontainer">
+                <mat-form-field>
+                  <mat-label>Input</mat-label>
+                  <input matInput>
+                </mat-form-field>
+                <mat-form-field>
+                  <mat-label>Select</mat-label>
+                  <mat-select>
+                    <mat-option value="one">First option</mat-option>
+                    <mat-option value="two">Second option</mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-form-field>
+                  <mat-label>Select</mat-label>
+                  <mat-select>
+                    <mat-option value="one">First option</mat-option>
+                    <mat-option value="two">Second option</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>             
+            </div>
+          </div>
+          <div class="addemployecontainer">
+            <div (click)="openmodal()" class="addemployeebutton" matTooltip="Add" matTooltipPosition="right">
+              <mat-icon>add</mat-icon>
+            </div>
+          </div>
         </div>
     </mat-grid-tile>
     <mat-grid-tile class="visualisebox" [rowspan]="currentScreenSize == 'Small' || currentScreenSize == 'Medium' || currentScreenSize == 'Large' || currentScreenSize == 'XLarge' ? 10 : 5">

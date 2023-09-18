@@ -1,5 +1,5 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 
 @Component({
@@ -9,9 +9,10 @@ import { Subject, takeUntil } from 'rxjs';
 })
 export class DemoManagementHeirarchyComponent implements OnInit {
 
+  @ViewChild('myModal', { static: false }) myModal!: ElementRef;
+
   destroyed = new Subject<void>();
   currentScreenSize!: string;
-
   displayNameMap = new Map([
     [Breakpoints.XSmall, 'XSmall'],
     [Breakpoints.Small, 'Small'],
@@ -19,10 +20,6 @@ export class DemoManagementHeirarchyComponent implements OnInit {
     [Breakpoints.Large, 'Large'],
     [Breakpoints.XLarge, 'XLarge'],
   ]);
-
-  rowonecolor: string = 'lightblue';
-  rowtwocolor: string = '#DDBDF1';
-  @ViewChild('div1', { static: false }) div1!: ElementRef;
   x: string = '';
   y: string = '';
   width: string = '';
@@ -56,27 +53,20 @@ export class DemoManagementHeirarchyComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openmodal(){
+    this.myModal.nativeElement.style.display = "flex";
+  }
 
-  ngAfterViewInit() {
-    this.div1.nativeElement.addEventListener("touchmove", (event: any) => {
-      let rect = event.target.getBoundingClientRect();
-      this.x = rect.x;
-      this.y = rect.y;
-      this.width = rect.width;
-      this.height = rect.height;
-      this.top = rect.top;
-    });
+  Closemodal(){
+    this.myModal.nativeElement.style.display = "none";
+  }
 
-    this.div1.nativeElement.addEventListener("mousedown", (event: any) => {
-      window.onmousemove=(e)=>{
-        this.getRect(event);
-      }
-    });
+  hidemodal(){
+    this.myModal.nativeElement.style.display = "none";
+  }
 
-    this.div1.nativeElement.addEventListener("mouseup", (event: any) => {
-      window.removeEventListener('mousemove',this.getRect);
-    });
-
+  stoppropagation(event:any){
+    event.stopPropagation();
   }
 
   getRect(event:any){

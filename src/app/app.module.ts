@@ -21,6 +21,9 @@ import { DemoObjectDescriptionComponent } from './demo-object-description/demo-o
 import { DemoCognitiveAnalysisComponent } from './demo-cognitive-analysis/demo-cognitive-analysis.component';
 import { DemoGlimpseOfTomorrowComponent } from './demo-glimpse-of-tomorrow/demo-glimpse-of-tomorrow.component';
 import { DemoPageNotFoundComponentComponent } from './demo-page-not-found-component/demo-page-not-found-component.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,10 @@ import { DemoPageNotFoundComponentComponent } from './demo-page-not-found-compon
     MatRadioModule,
     FormsModule,
     ReactiveFormsModule,
-    MatRippleModule
+    MatRippleModule,
+    MatTooltipModule,
+    MatSelectModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
