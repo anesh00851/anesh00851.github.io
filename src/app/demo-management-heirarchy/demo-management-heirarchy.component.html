@@ -67,6 +67,166 @@
         </div>
     </mat-grid-tile>
     <mat-grid-tile class="visualisebox" [rowspan]="currentScreenSize == 'Small' || currentScreenSize == 'Medium' || currentScreenSize == 'Large' || currentScreenSize == 'XLarge' ? 10 : 5">
-        
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <line [attr.x1]="ceodownsidex1" [attr.y1]="ceodownsidey1" [attr.x2]="salesheadupsidex1" [attr.y2]="salesheadupsidey1" stroke="red" [attr.stroke-width]="currentScreenSize == 'XSmall' ? 2 :5"/>
+        <circle [attr.cx]="salesheadupsidex1" [attr.cy]="salesheadupsidey1" [attr.r]="currentScreenSize == 'XSmall' ? 5 : 10" fill="red"/>
+
+        <line [attr.x1]="ceodownsidex1" [attr.y1]="ceodownsidey1" [attr.x2]="productionheadupsidex1" [attr.y2]="productionheadupsidey1" stroke="red" [attr.stroke-width]="currentScreenSize == 'XSmall' ? 2 :5"/>
+        <circle [attr.cx]="productionheadupsidex1" [attr.cy]="productionheadupsidey1" [attr.r]="currentScreenSize == 'XSmall' ? 5 : 10" fill="red"/>
+
+        <line [attr.x1]="ceodownsidex1" [attr.y1]="ceodownsidey1" [attr.x2]="markettingheadupsidex1" [attr.y2]="markettingheadupsidey1" stroke="red" [attr.stroke-width]="currentScreenSize == 'XSmall' ? 2 :5"/>
+        <circle [attr.cx]="markettingheadupsidex1" [attr.cy]="markettingheadupsidey1" [attr.r]="currentScreenSize == 'XSmall' ? 5 : 10" fill="red"/>
+
+        <line [attr.x1]="salesheaddownsidex1" [attr.y1]="salesheaddownsidey1" [attr.x2]="salesmanagerupsidex1" [attr.y2]="salesmanagerupsidey1" stroke="red" [attr.stroke-width]="currentScreenSize == 'XSmall' ? 2 :5"/>
+        <circle [attr.cx]="salesmanagerupsidex1" [attr.cy]="salesmanagerupsidey1" [attr.r]="currentScreenSize == 'XSmall' ? 5 : 10" fill="red"/>
+
+        <line [attr.x1]="productionheaddownsidex1" [attr.y1]="productionheaddownsidey1" [attr.x2]="productionmanagerupsidex1" [attr.y2]="productionmanagerupsidey1" stroke="red" [attr.stroke-width]="currentScreenSize == 'XSmall' ? 2 :5"/>
+        <circle [attr.cx]="productionmanagerupsidex1" [attr.cy]="productionmanagerupsidey1" [attr.r]="currentScreenSize == 'XSmall' ? 5 : 10" fill="red"/>
+
+        <line [attr.x1]="markettingheaddownsidex1" [attr.y1]="markettingheaddownsidey1" [attr.x2]="markettingmanagerupsidex1" [attr.y2]="markettingmanagerupsidey1" stroke="red" [attr.stroke-width]="currentScreenSize == 'XSmall' ? 2 :5"/>
+        <circle [attr.cx]="markettingmanagerupsidex1" [attr.cy]="markettingmanagerupsidey1" [attr.r]="currentScreenSize == 'XSmall' ? 5 : 10" fill="red"/>
+
+        <line [attr.x1]="salesmanagerdownsidex1" [attr.y1]="salesmanagerdownsidey1" [attr.x2]="salesl1upsidex1" [attr.y2]="salesl1upsidey1" stroke="red" [attr.stroke-width]="currentScreenSize == 'XSmall' ? 2 :5"/>
+        <circle [attr.cx]="salesl1upsidex1" [attr.cy]="salesl1upsidey1" [attr.r]="currentScreenSize == 'XSmall' ? 5 : 10" fill="red"/>
+
+        <line [attr.x1]="productionmanagerdownsidex1" [attr.y1]="productionmanagerdownsidey1" [attr.x2]="productionl1upsidex1" [attr.y2]="productionl1upsidey1" stroke="red" [attr.stroke-width]="currentScreenSize == 'XSmall' ? 2 :5"/>
+        <circle [attr.cx]="productionl1upsidex1" [attr.cy]="productionl1upsidey1" [attr.r]="currentScreenSize == 'XSmall' ? 5 : 10" fill="red"/>
+
+        <line [attr.x1]="markettingmanagerdownsidex1" [attr.y1]="markettingmanagerdownsidey1" [attr.x2]="markettingl1upsidex1" [attr.y2]="markettingl1upsidey1" stroke="red" [attr.stroke-width]="currentScreenSize == 'XSmall' ? 2 :5"/>
+        <circle [attr.cx]="markettingl1upsidex1" [attr.cy]="markettingl1upsidey1" [attr.r]="currentScreenSize == 'XSmall' ? 5 : 10" fill="red"/>
+
+        <line [attr.x1]="salesl1downsidex1" [attr.y1]="salesl1downsidey1" [attr.x2]="salesl2upsidex1" [attr.y2]="salesl2upsidey1" stroke="red" [attr.stroke-width]="currentScreenSize == 'XSmall' ? 2 :5"/>
+        <circle [attr.cx]="salesl2upsidex1" [attr.cy]="salesl2upsidey1" [attr.r]="currentScreenSize == 'XSmall' ? 5 : 10" fill="red"/>
+
+        <line [attr.x1]="productionl1downsidex1" [attr.y1]="productionl1downsidey1" [attr.x2]="productionl2upsidex1" [attr.y2]="productionl2upsidey1" stroke="red" [attr.stroke-width]="currentScreenSize == 'XSmall' ? 2 :5"/>
+        <circle [attr.cx]="productionl2upsidex1" [attr.cy]="productionl2upsidey1" [attr.r]="currentScreenSize == 'XSmall' ? 5 : 10" fill="red"/>
+
+        <line [attr.x1]="markettingl1downsidex1" [attr.y1]="markettingl1downsidey1" [attr.x2]="markettingl2upsidex1" [attr.y2]="markettingl2upsidey1" stroke="red" [attr.stroke-width]="currentScreenSize == 'XSmall' ? 2 :5"/>
+        <circle [attr.cx]="markettingl2upsidex1" [attr.cy]="markettingl2upsidey1" [attr.r]="currentScreenSize == 'XSmall' ? 5 : 10" fill="red"/>
+      </svg>
+        <div *ngIf="currentScreenSize != 'XSmall'" #ceo class="profilecontainer ceo">
+          <img src="../../assets/13.jpeg">
+          <h5>Anesh13</h5>
+          <h6>CEO</h6>
+        </div>
+      
+        <div *ngIf="currentScreenSize != 'XSmall'" #saleshead class="profilecontainer saleshead">
+          <img src="../../assets/1.jpeg">
+          <h5>Anesh1</h5>
+          <h6>Sales-Head</h6>
+        </div>
+        <div *ngIf="currentScreenSize != 'XSmall'" #productionhead class="profilecontainer productionhead">
+          <img src="../../assets/2.jpeg">
+          <h5>Anesh2</h5>
+          <h6>Production-Head</h6>
+        </div>
+        <div *ngIf="currentScreenSize != 'XSmall'" #markettinghead class="profilecontainer markettinghead">
+          <img src="../../assets/3.jpeg">
+          <h5>Anesh3</h5>
+          <h6>Marketing-Head</h6>
+        </div>
+      
+        <div *ngIf="currentScreenSize != 'XSmall'" #salesmanager class="profilecontainer salesmanager">
+          <img src="../../assets/4.jpeg">
+          <h5>Anesh4</h5>
+          <h6>Sales-Manager</h6>
+        </div>
+        <div *ngIf="currentScreenSize != 'XSmall'" #salesl1 class="profilecontainer salesl1">
+          <img src="../../assets/5.jpeg">
+          <h5>Anesh5</h5>
+          <h6>Sales-L1</h6>
+        </div>
+        <div *ngIf="currentScreenSize != 'XSmall'" #salesl2 class="profilecontainer salesl2">
+          <img src="../../assets/6.jpeg">
+          <h5>Anesh6</h5>
+          <h6>Sales-L2</h6>
+        </div>
+      
+        <div *ngIf="currentScreenSize != 'XSmall'" #productionmanager class="profilecontainer productionmanager">
+          <img src="../../assets/7.jpeg">
+          <h5>Anesh7</h5>
+          <h6>Production-Manager</h6>
+        </div>
+        <div *ngIf="currentScreenSize != 'XSmall'" #productionl1 class="profilecontainer productionl1">
+          <img src="../../assets/8.jpeg">
+          <h5>Anesh8</h5>
+          <h6>Production-L1</h6>
+        </div>
+        <div *ngIf="currentScreenSize != 'XSmall'" #productionl2 class="profilecontainer productionl2">
+          <img src="../../assets/9.jpeg">
+          <h5>Anesh9</h5>
+          <h6>Production-L2</h6>
+        </div>
+      
+        <div *ngIf="currentScreenSize != 'XSmall'" #marketingmanager class="profilecontainer marketingmanager">
+          <img src="../../assets/10.jpeg">
+          <h5>Anesh10</h5>
+          <h6>Marketing-Manager</h6>
+        </div>
+        <div *ngIf="currentScreenSize != 'XSmall'" #marketingl1 class="profilecontainer marketingl1">
+          <img src="../../assets/11.jpeg">
+          <h5>Anesh11</h5>
+          <h6>Marketing-L1</h6>
+        </div>
+        <div *ngIf="currentScreenSize != 'XSmall'" #marketingl2 class="profilecontainer marketingl2">
+          <img src="../../assets/12.jpeg">
+          <h5>Anesh12</h5>
+          <h6>Marketing-L2</h6>
+        </div>
+
+        <mat-chip-list *ngIf="currentScreenSize == 'XSmall'" aria-label="Employees Avatar">
+          <mat-chip #matchipceo class="matchipceo">
+            <img matChipAvatar src="../../assets/1.jpeg"/>
+            Anesh13-CEO
+          </mat-chip>
+          <mat-chip #matchipsaleshead class="matchipsaleshead">
+            <img matChipAvatar src="../../assets/2.jpeg"/>
+            Anesh1-SalesHead
+          </mat-chip>
+          <mat-chip #matchipproductionhead class="matchipproductionhead">
+            <img matChipAvatar src="../../assets/3.jpeg"/>
+            Anesh2-ProductionHead
+          </mat-chip>
+          <mat-chip #matchipmarkettinghead class="matchipmarkettinghead">
+            <img matChipAvatar src="../../assets/4.jpeg"/>
+            Anesh3-MarkettingHead
+          </mat-chip>
+          <mat-chip #matchipsalesmanager class="matchipsalesmanager">
+            <img matChipAvatar src="../../assets/5.jpeg"/>
+            Anesh4-SalesManager
+          </mat-chip>
+          <mat-chip #matchipproductionmanager class="matchipproductionmanager">
+            <img matChipAvatar src="../../assets/6.jpeg"/>
+            Anesh5-ProductionManager
+          </mat-chip>
+          <mat-chip #matchipmarkettingmanager class="matchipmarkettingmanager">
+            <img matChipAvatar src="../../assets/7.jpeg"/>
+            Anesh6-MarkettingManager
+          </mat-chip>
+          <mat-chip #matchipsalesl1 class="matchipsalesl1">
+            <img matChipAvatar src="../../assets/8.jpeg"/>
+            Anesh7-SalesL1
+          </mat-chip>
+          <mat-chip #matchipSalesl2 class="matchipSalesl2">
+            <img matChipAvatar src="../../assets/9.jpeg"/>
+            Anesh8-SalesL2
+          </mat-chip>
+          <mat-chip #matchipproductionl1 class="matchipproductionl1">
+            <img matChipAvatar src="../../assets/10.jpeg"/>
+            Anesh9-ProductionL1
+          </mat-chip>
+          <mat-chip #matchipproductionl2 class="matchipproductionl2">
+            <img matChipAvatar src="../../assets/11.jpeg"/>
+            Anesh10-ProductionL2
+          </mat-chip>
+          <mat-chip #matchipmarkettingl1 class="matchipmarkettingl1">
+            <img matChipAvatar src="../../assets/12.jpeg"/>
+            Anesh11-MarkettingL1
+          </mat-chip>
+          <mat-chip #matchipmarkettingl2 class="matchipmarkettingl2">
+            <img matChipAvatar src="../../assets/13.jpeg"/>
+            Anesh12-MarkettingL2
+          </mat-chip>
+        </mat-chip-list>
     </mat-grid-tile>
 </mat-grid-list>

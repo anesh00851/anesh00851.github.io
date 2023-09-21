@@ -6,6 +6,14 @@
     width: 100%;
 }
 
+svg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
 .titleul {
     background-color: lightskyblue;
     display: flex;
@@ -94,4 +102,359 @@ mat-icon {
     display: flex;
     flex-direction: column;
 }
+
+img{
+    width: 65px;
+    height: 65px;
+    margin-top: 1px;
+    border-radius: 30px;
+}
+
+.profilecontainer{
+    width: 100px;
+    height: 100px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+h5,h6{
+    margin: 0px;
+}
+
+.ceo{
+    position: absolute;
+    top: 20px;
+    left: 197px;
+}
+
+.saleshead{
+    position: absolute;
+    top: 187px;
+    left: 17px;
+}
+
+.productionhead{
+    position: absolute;
+    top: 187px;
+    left: 195px;
+}
+
+.markettinghead{
+    position: absolute;
+    top: 190px;
+    left: 357px;
+}
+
+.salesmanager{
+    position: absolute;
+    left: 15px;
+    top: 327px;
+}
+
+.salesl1{
+    position: absolute;
+    left: 18px;
+    top: 453px;
+}
+
+.salesl2{
+    position: absolute;
+    left: 18px;
+    top: 586px;
+}
+
+.productionmanager{
+    position: absolute;
+    left: 197px;
+    top: 327px;
+}
+
+.productionl1{
+    position: absolute;
+    top: 453px;
+    left: 197px;
+}
+
+.productionl2{
+    position: absolute;
+    top: 586px;
+    left: 195px;
+}
+
+.marketingmanager{
+    position: absolute;
+    top: 325px;
+    left: 357px;
+}
+
+.marketingl1{
+    position: absolute;
+    top: 453px;
+    left: 359px;
+}
+
+.marketingl2{
+    position: absolute;
+    top: 586px;
+    left: 360px;
+}
+
+@media only screen and (max-width: 800px) {
+    .ceo{
+        position: absolute;
+        top: 14px;
+        left: 149px;
+    }
+    .saleshead {
+        position: absolute;
+        top: 136px;
+        left: 17px;
+    }
+    .productionhead{
+        position: absolute;
+        top: 134px;
+        left: 149px;
+    }
+    .markettinghead{
+        position: absolute;
+        top: 133px;
+        left: 278px;
+    }
+    .salesmanager{
+        position: absolute;
+        left: 15px;
+        top: 251px;
+    }
+    .salesl1{
+        position: absolute;
+        left: 18px;
+        top: 362px;
+    }
+    .salesl2{
+        position: absolute;
+        left: 18px;
+        top: 472px;
+    }
+    .productionhead{
+        position: absolute;
+        top: 134px;
+        left: 149px;
+    }
+    .markettinghead{
+        position: absolute;
+        top: 133px;
+        left: 278px;
+    }
+    .productionmanager{
+        position: absolute;
+        left: 148px;
+        top: 249px;
+    }
+    .productionl1{
+        position: absolute;
+        top: 362px;
+        left: 147px;
+    }
+    .productionl2{
+        position: absolute;
+        top: 472px;
+        left: 147px;
+    }
+    .marketingmanager{
+        position: absolute;
+        top: 246px;
+        left: 277px;
+    }
+    .marketingl1{
+        position: absolute;
+        top: 359px;
+        left: 277px;
+    }
+    .marketingl2{
+        position: absolute;
+        top: 472px;
+        left: 276px;
+    }
+    .profilecontainer{
+        width: 80px;
+        height: 80px;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        margin-top: 1px;
+        border-radius: 30px;
+    }
+    h5{
+        font-size: 9px;
+        height: 13px;
+    }
+    h6{
+        font-size: 9px;
+        height: 9px;
+    }
+    .profilecontainer.productionmanager h6{
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        width: 19px;
+        height: 19px;
+        margin-top: 1px;
+        border-radius: 30px;
+    }
+
+    mat-chip-list {
+        height: 100%;
+    }
+
+    .matchipceo {
+        left: 166px;
+        top: 6px;
+    }
+
+    .matchipsaleshead {
+        top: 44px;
+        left: -76px;
+    }
+
+    .matchipproductionhead {
+        top: 45px;
+        left: 55px;
+    }
+
+    .matchipmarkettinghead {
+        top: 44px;
+        left: 137px;
+    }
+
+    .matchipsalesmanager {
+        top: 72px;
+        left: -123px;
+    }
+
+    .matchipproductionmanager {
+        top: 97px;
+        left: 253px;
+    }
+
+    .matchipmarkettingmanager {
+        top: 66px;
+        left: -11px;
+    }
+
+    .matchipsalesl1 {
+        top: 58px;
+        left: 34px;
+    }
+
+    .matchipSalesl2 {
+        top: 97px;
+        left: -76px;
+    }
+
+    .matchipproductionl1 {
+        top: 105px;
+        left: 59px;
+    }
+
+    .matchipproductionl2 {
+        top: 121px;
+        left: 273px;
+    }
+
+    .matchipmarkettingl1 {
+        top: 92px;
+        left: -4px;
+    }
+
+    .matchipmarkettingl2 {
+        top: 124px;
+        left: -155px;
+    }
+
+    .mat-standard-chip .mat-chip-avatar {
+        width: 19px;
+        height: 19px;
+        margin: 0px;
+        padding-right: 5px;
+    }
+
+    .mat-standard-chip.mat-chip-with-avatar {
+        padding-left: 0;
+        padding-right: 5px;
+    }
+
+    .mat-chip {
+        font-size: 10px;
+    }
+
+    .mat-standard-chip {
+        transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: inline-flex;
+        padding: 7px 12px;
+        border-radius: 16px;
+        align-items: center;
+        cursor: default;
+        min-height: 19px;
+        height: 1px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .matchipmarkettingl1 {
+        top: 167px;
+        left: -60px;
+    }
+    
+    .matchipmarkettingl2 {
+        left: 81px;
+        top: 184px;
+    }
+
+    .matchipproductionmanager {
+        top: 115px;
+        left: 220px;
+    }
+
+    .matchipproductionl1 {
+        top: 125px;
+        left: 10px;
+    }
+
+    .matchipproductionl2 {
+        top: 140px;
+        left: 226px;
+    }
+
+    .matchipproductionhead {
+        top: 45px;
+        left: -3px;
+    }
+
+    .mat-chip {
+        font-size: 11px;
+    }
+
+    .matchipmarkettingmanager {
+        top: 173px;
+        left: -117px;
+    }
+}
+
+
+
+
+
+
 
