@@ -116,11 +116,9 @@ export class DemoManagementHeirarchyComponent implements OnInit {
 
   ngAfterViewInit(){
     if(this.currentScreenSize != "XSmall"){
-      console.log('124');
       this.getRectcoordinates();
     }
     else if(this.currentScreenSize == "XSmall"){
-      console.log('128');
       this.getmatchipRectcoordinates();
     }
   }
