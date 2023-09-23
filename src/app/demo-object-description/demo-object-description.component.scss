@@ -18,8 +18,66 @@ svg{
     height: 100%;
 }
 
-#acircle,#aline,#bcircle,#bline{
+#acircle,#aline,#aline1,#arect,#atext{
 visibility: hidden;
+}
+
+#bcircle,
+#bline,
+#bline1,
+#brect,
+#btext {
+    visibility: hidden;
+}
+
+#cdefg1circle,#cdefg1line,#cdefg2circle,#cdefg2line,#cdefg3circle,#cdefg3line,#cdefg4circle,
+#cdefg4line,#cdefg5circle,#cdefg5line,#cdefg6line,#cdefg7line,#cdefgrect,#cdefgtext{
+    visibility: hidden;
+}
+
+#hcircle,#hline,#icircle,#iline,#jcircle,#jline,#hijline,#hijrect,#hijtext{
+    visibility: hidden;
+}
+
+#kcircle,#kline,#krect,#ktext{
+    visibility: hidden;
+}
+
+#showallrect,#showalltext{
+cursor: pointer;
+}
+
+.infocontainer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 46px;
+    z-index: 2;
+    color: green;
+    background-color: aliceblue;
+}
+
+.innerinfocontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .divfora{
@@ -28,9 +86,130 @@ visibility: hidden;
     background-color: chartreuse;
     border-radius: 10px;
     position: absolute;
-    top: 228px;
-    left: 267px;
-    opacity: 0.8;
+    top: 265px;
+    left: 310px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.divforb{
+    width: 18px;
+    height: 18px;
+    background-color: aqua;
+    border-radius: 10px;
+    position: absolute;
+    top: 295px;
+    left: 425px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.cdefg1{
+    width: 18px;
+    height: 18px;
+    background-color: blue;
+    border-radius: 10px;
+    position: absolute;
+    top: 276px;
+    left: 593px;
+    opacity: 0; 
+    cursor: pointer;
+}
+
+.cdefg2{
+    width: 18px;
+    height: 18px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    position: absolute;
+    top: 211px;
+    left: 520px;
+    opacity: 0; 
+    cursor: pointer;
+}
+
+.cdefg3{
+    width: 18px;
+    height: 18px;
+    background-color: brown;
+    border-radius: 10px;
+    position: absolute;
+    top: 364px;
+    left: 559px;
+    opacity: 0; 
+    cursor: pointer;
+}
+
+.cdefg4{
+    width: 18px;
+    height: 18px;
+    background-color: chocolate;
+    border-radius: 10px;
+    position: absolute;
+    top: 208px;
+    left: 632px;
+    opacity: 0; 
+    cursor: pointer;
+}
+
+.cdefg5{
+    width: 18px;
+    height: 18px;
+    background-color: crimson;
+    border-radius: 10px;
+    position: absolute;
+    top: 171px;
+    left: 528px;
+    opacity: 0; 
+    cursor: pointer;
+}
+
+.hij1{
+    width: 18px;
+    height: 18px;
+    background-color: darkgoldenrod;
+    border-radius: 10px;
+    position: absolute;
+    top: 287px;
+    left: 74px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hij2{
+    width: 18px;
+    height: 18px;
+    background-color: darkgreen;
+    border-radius: 10px;
+    position: absolute;
+    top: 352px;
+    left: 94px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hij3{
+    width: 18px;
+    height: 18px;
+    background-color: yellow;
+    border-radius: 10px;
+    position: absolute;
+    top: 394px;
+    left: 342px;
+    opacity: 0; 
+    cursor: pointer; 
+}
+
+.divfork{
+    width: 18px;
+    height: 18px;
+    background-color: violet;
+    border-radius: 10px;
+    position: absolute;
+    top: 76px;
+    left: 142px;
+    opacity: 0;  
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {
