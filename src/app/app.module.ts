@@ -25,6 +25,8 @@ import { DemoPageNotFoundComponentComponent } from './demo-page-not-found-compon
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import { DemoMatBottomSheetComponent } from './demo-mat-bottom-sheet/demo-mat-bottom-sheet.component';
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     DemoObjectDescriptionComponent,
     DemoCognitiveAnalysisComponent,
     DemoGlimpseOfTomorrowComponent,
-    DemoPageNotFoundComponentComponent
+    DemoPageNotFoundComponentComponent,
+    DemoMatBottomSheetComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatTooltipModule,
     MatSelectModule,
     MatFormFieldModule,
-    MatChipsModule
+    MatChipsModule,
+    MatBottomSheetModule
   ],
   providers: [],
   bootstrap: [AppComponent]

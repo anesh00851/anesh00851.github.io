@@ -1,59 +1,97 @@
-<div #modalcontent class="infocontainer">
+<div *ngIf="currentScreenSize != 'XSmall'" #modalcontent class="infocontainer">
     <span (click)="closemodal(modalcontent)" class="close">&times;</span>
-    <div class="innerinfocontainer"><h2>Click on the a,b,c...circles to know more</h2></div>
+    <div class="innerinfocontainer">
+        <h2>Click on the a,b,c...circles to know more</h2>
+    </div>
 </div>
-<div class="imagecontainer">
+<div *ngIf="currentScreenSize != 'XSmall'" class="imagecontainer">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
         <circle #acircle id="acircle" _ngcontent-gna-c118="" cx="320" cy="273" r="10" fill="red"></circle>
-        <line #aline id="aline" _ngcontent-rhx-c118="" x1="320" y1="273" x2="494" y2="128" stroke="red" stroke-width="2"></line>
-        <line #aline1 id="aline1" _ngcontent-rhx-c118="" x1="494" y1="128" x2="700" y2="128" stroke="red" stroke-width="2"></line>
+        <line #aline id="aline" _ngcontent-rhx-c118="" x1="320" y1="273" x2="494" y2="128" stroke="red"
+            stroke-width="2"></line>
+        <line #aline1 id="aline1" _ngcontent-rhx-c118="" x1="494" y1="128" x2="700" y2="128" stroke="red"
+            stroke-width="2"></line>
         <g>
-            <rect #arect id="arect" x="700" y="123" width="145" height="20" rx="10px" ry="10px" stroke="red" fill="transparent" stroke-width="2"></rect>
-            <text #atext id="atext" x="703" y="137" font-family="Verdana" font-size="17" fill="blue">solar panels busgrid</text>
+            <rect #arect id="arect" x="700" y="123" width="145" height="20" rx="10px" ry="10px" stroke="red"
+                fill="transparent" stroke-width="2"></rect>
+            <text #atext id="atext" x="703" y="137" font-family="Verdana" font-size="17" fill="blue">solar panels
+                busgrid</text>
         </g>
 
-        <circle #bcircle id="bcircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="434" cy="304" r="10" fill="red"></circle>
-        <line #bline id="bline" _ngcontent-mwk-c118="" x1="434" y1="304" x2="516" y2="401" stroke="red" stroke-width="2"></line>
-        <line #bline1 id="bline1" _ngcontent-mwk-c118="" x1="516" y1="401" x2="700" y2="401" stroke="red" stroke-width="2"></line>
+        <circle #bcircle id="bcircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="434" cy="304" r="10" fill="red">
+        </circle>
+        <line #bline id="bline" _ngcontent-mwk-c118="" x1="434" y1="304" x2="516" y2="401" stroke="red"
+            stroke-width="2"></line>
+        <line #bline1 id="bline1" _ngcontent-mwk-c118="" x1="516" y1="401" x2="700" y2="401" stroke="red"
+            stroke-width="2"></line>
         <g>
-            <rect #brect id="brect" x="700" y="389" width="170" height="20" rx="10px" ry="10px" stroke="red" fill="transparent" stroke-width="2"></rect>
-            <text #btext id="btext" x="703" y="403" font-family="Verdana" font-size="17" fill="blue">encapsulated solar cells</text>
+            <rect #brect id="brect" x="700" y="389" width="170" height="20" rx="10px" ry="10px" stroke="red"
+                fill="transparent" stroke-width="2"></rect>
+            <text #btext id="btext" x="703" y="403" font-family="Verdana" font-size="17" fill="blue">encapsulated solar
+                cells</text>
         </g>
 
-        <circle #cdefg1circle id="cdefg1circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="602" cy="285" r="10" fill="red"></circle>
-        <line #cdefg1line id="cdefg1line" _ngcontent-mwk-c118="" x1="602" y1="285" x2="582" y2="224" stroke="red" stroke-width="2"></line>
-        <circle #cdefg2circle id="cdefg2circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="529" cy="220" r="10" fill="red"></circle>
-        <line #cdefg2line id="cdefg2line" _ngcontent-mwk-c118="" x1="529" y1="220" x2="582" y2="225" stroke="red" stroke-width="2"></line>
-        <circle #cdefg3circle id="cdefg3circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="568" cy="373" r="10" fill="red"></circle>
-        <line #cdefg3line id="cdefg3line" _ngcontent-mwk-c118="" x1="568" y1="373" x2="582" y2="224" stroke="red" stroke-width="2"></line>
-        <circle #cdefg4circle id="cdefg4circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="641" cy="217" r="10" fill="red"></circle>
-        <line #cdefg4line id="cdefg4line" _ngcontent-mwk-c118="" x1="641" y1="217" x2="583" y2="224" stroke="red" stroke-width="2"></line>
-        <circle #cdefg5circle id="cdefg5circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="538" cy="181" r="10" fill="red"></circle>
-        <line #cdefg5line id="cdefg5line" _ngcontent-mwk-c118="" x1="538" y1="181" x2="581" y2="224" stroke="red" stroke-width="2"></line>
-        <line #cdefg6line id="cdefg6line" _ngcontent-mwk-c118="" x1="581" y1="224" x2="595" y2="180" stroke="red" stroke-width="2"></line>
-        <line #cdefg7line id="cdefg7line" _ngcontent-mwk-c118="" x1="595" y1="180" x2="700" y2="180" stroke="red" stroke-width="2"></line>
+        <circle #cdefg1circle id="cdefg1circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="602" cy="285" r="10"
+            fill="red"></circle>
+        <line #cdefg1line id="cdefg1line" _ngcontent-mwk-c118="" x1="602" y1="285" x2="582" y2="224" stroke="red"
+            stroke-width="2"></line>
+        <circle #cdefg2circle id="cdefg2circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="529" cy="220" r="10"
+            fill="red"></circle>
+        <line #cdefg2line id="cdefg2line" _ngcontent-mwk-c118="" x1="529" y1="220" x2="582" y2="225" stroke="red"
+            stroke-width="2"></line>
+        <circle #cdefg3circle id="cdefg3circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="568" cy="373" r="10"
+            fill="red"></circle>
+        <line #cdefg3line id="cdefg3line" _ngcontent-mwk-c118="" x1="568" y1="373" x2="582" y2="224" stroke="red"
+            stroke-width="2"></line>
+        <circle #cdefg4circle id="cdefg4circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="641" cy="217" r="10"
+            fill="red"></circle>
+        <line #cdefg4line id="cdefg4line" _ngcontent-mwk-c118="" x1="641" y1="217" x2="583" y2="224" stroke="red"
+            stroke-width="2"></line>
+        <circle #cdefg5circle id="cdefg5circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="538" cy="181" r="10"
+            fill="red"></circle>
+        <line #cdefg5line id="cdefg5line" _ngcontent-mwk-c118="" x1="538" y1="181" x2="581" y2="224" stroke="red"
+            stroke-width="2"></line>
+        <line #cdefg6line id="cdefg6line" _ngcontent-mwk-c118="" x1="581" y1="224" x2="595" y2="180" stroke="red"
+            stroke-width="2"></line>
+        <line #cdefg7line id="cdefg7line" _ngcontent-mwk-c118="" x1="595" y1="180" x2="700" y2="180" stroke="red"
+            stroke-width="2"></line>
         <g>
-            <rect #cdefgrect _ngcontent-jcr-c118="" id="cdefgrect" x="700" y="170" width="160" height="20" rx="10px" ry="10px" stroke="red" fill="transparent" stroke-width="2"></rect>
-            <text #cdefgtext _ngcontent-jcr-c118="" id="cdefgtext" x="705" y="186" font-family="Verdana" font-size="17" fill="blue">MME electric solzars</text>
+            <rect #cdefgrect _ngcontent-jcr-c118="" id="cdefgrect" x="700" y="170" width="160" height="20" rx="10px"
+                ry="10px" stroke="red" fill="transparent" stroke-width="2"></rect>
+            <text #cdefgtext _ngcontent-jcr-c118="" id="cdefgtext" x="705" y="186" font-family="Verdana" font-size="17"
+                fill="blue">MME electric solzars</text>
         </g>
 
-        <circle #hcircle id="hcircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="83" cy="295" r="10" fill="red"></circle>
-        <line #hline id="hline" _ngcontent-mwk-c118="" x1="83" y1="295" x2="351" y2="449" stroke="red" stroke-width="2"></line>
-        <circle #icircle id="icircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="103" cy="361" r="10" fill="red"></circle>
-        <line #iline id="iline" _ngcontent-mwk-c118="" x1="103" y1="361" x2="351" y2="449" stroke="red" stroke-width="2"></line>
-        <circle #jcircle id="jcircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="351" cy="403" r="10" fill="red"></circle>
-        <line #jline id="jline" _ngcontent-mwk-c118="" x1="351" y1="403" x2="351" y2="449" stroke="red" stroke-width="2"></line>
-        <line #hijline id="hijline" _ngcontent-mwk-c118="" x1="351" y1="449" x2="700" y2="449" stroke="red" stroke-width="2"></line>
+        <circle #hcircle id="hcircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="83" cy="295" r="10" fill="red">
+        </circle>
+        <line #hline id="hline" _ngcontent-mwk-c118="" x1="83" y1="295" x2="351" y2="449" stroke="red" stroke-width="2">
+        </line>
+        <circle #icircle id="icircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="103" cy="361" r="10" fill="red">
+        </circle>
+        <line #iline id="iline" _ngcontent-mwk-c118="" x1="103" y1="361" x2="351" y2="449" stroke="red"
+            stroke-width="2"></line>
+        <circle #jcircle id="jcircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="351" cy="403" r="10" fill="red">
+        </circle>
+        <line #jline id="jline" _ngcontent-mwk-c118="" x1="351" y1="403" x2="351" y2="449" stroke="red"
+            stroke-width="2"></line>
+        <line #hijline id="hijline" _ngcontent-mwk-c118="" x1="351" y1="449" x2="700" y2="449" stroke="red"
+            stroke-width="2"></line>
         <g>
-            <rect #hijrect _ngcontent-jcr-c118="" id="hijrect" x="700" y="437" width="160" height="20" rx="10px" ry="10px" stroke="red" fill="transparent" stroke-width="2"></rect>
-            <text #hijtext _ngcontent-jcr-c118="" id="hijtext" x="705" y="452" font-family="Verdana" font-size="17" fill="blue">GTInverter & holders</text>
+            <rect #hijrect _ngcontent-jcr-c118="" id="hijrect" x="700" y="437" width="160" height="20" rx="10px"
+                ry="10px" stroke="red" fill="transparent" stroke-width="2"></rect>
+            <text #hijtext _ngcontent-jcr-c118="" id="hijtext" x="705" y="452" font-family="Verdana" font-size="17"
+                fill="blue">GTInverter & holders</text>
         </g>
 
-        <circle #kcircle id="kcircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="151" cy="85" r="10" fill="red"></circle>
-        <line #kline id="kline" _ngcontent-mwk-c118="" x1="151" y1="85" x2="700" y2="85" stroke="red" stroke-width="2"></line>
+        <circle #kcircle id="kcircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="151" cy="85" r="10" fill="red">
+        </circle>
+        <line #kline id="kline" _ngcontent-mwk-c118="" x1="151" y1="85" x2="700" y2="85" stroke="red" stroke-width="2">
+        </line>
         <g>
-            <rect #krect _ngcontent-jcr-c118="" id="krect" x="700" y="75" width="180" height="20" rx="10px" ry="10px" stroke="red" fill="transparent" stroke-width="2"></rect>
-            <text #ktext _ngcontent-jcr-c118="" id="ktext" x="705" y="90" font-family="Verdana" font-size="17" fill="blue">Wilmington Clampmeter</text>
+            <rect #krect _ngcontent-jcr-c118="" id="krect" x="700" y="75" width="180" height="20" rx="10px" ry="10px"
+                stroke="red" fill="transparent" stroke-width="2"></rect>
+            <text #ktext _ngcontent-jcr-c118="" id="ktext" x="705" y="90" font-family="Verdana" font-size="17"
+                fill="blue">Wilmington Clampmeter</text>
         </g>
 
         <g>
@@ -61,12 +99,15 @@
             cdefg1circle,cdefg1line,cdefg2circle,cdefg2line,cdefg3circle,cdefg3line,cdefg4circle,
             cdefg4line,cdefg5circle,cdefg5line,cdefg6line,cdefg7line,cdefgrect,cdefgtext,
             hcircle,hline,icircle,iline,jcircle,jline,hijline,hijrect,hijtext,
-            kcircle,kline,krect,ktext)" #showallrect _ngcontent-seo-c118="" _ngcontent-jcr-c118="" id="showallrect" x="593" y="25" width="68" height="20" rx="10px" ry="10px" stroke="black" fill="transparent" stroke-width="2"></rect>
+            kcircle,kline,krect,ktext)" #showallrect _ngcontent-seo-c118="" _ngcontent-jcr-c118="" id="showallrect"
+                x="593" y="25" width="68" height="20" rx="10px" ry="10px" stroke="black" fill="transparent"
+                stroke-width="2"></rect>
             <text (click)="showall(acircle,aline,aline1,arect,atext,bcircle,bline,bline1,brect,btext,
             cdefg1circle,cdefg1line,cdefg2circle,cdefg2line,cdefg3circle,cdefg3line,cdefg4circle,
             cdefg4line,cdefg5circle,cdefg5line,cdefg6line,cdefg7line,cdefgrect,cdefgtext,
             hcircle,hline,icircle,iline,jcircle,jline,hijline,hijrect,hijtext,
-            kcircle,kline,krect,ktext)" #showalltext _ngcontent-seo-c118="" _ngcontent-jcr-c118="" id="showalltext" x="598" y="41" font-family="Verdana" font-size="17" fill="black">show all</text>
+            kcircle,kline,krect,ktext)" #showalltext _ngcontent-seo-c118="" _ngcontent-jcr-c118="" id="showalltext"
+                x="598" y="41" font-family="Verdana" font-size="17" fill="black">show all</text>
         </g>
     </svg>
     <img #matcardimage src="../../assets/SolarPanelParts.jpg" mat-card-image>
@@ -130,3 +171,175 @@
     hcircle,hline,icircle,iline,jcircle,jline,hijline,hijrect,hijtext,
     kcircle,kline,krect,ktext)" class="divfork"></div>
 </div>
+
+<mat-grid-list class="xsmallimagecontainer" *ngIf="currentScreenSize == 'XSmall'" [cols]="1" rowHeight="10vh">
+    <mat-grid-tile [rowspan]="5">
+        <div class="helpdiv"><button (click)="openBottomSheet()" mat-raised-button><mat-icon>help_outline</mat-icon>help</button></div>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <circle #xsmallacircle id="xsmallacircle" _ngcontent-gna-c118="" cx="320" cy="273" r="10" fill="red"></circle>
+                <line #xsmallaline id="xsmallaline" _ngcontent-rhx-c118="" x1="320" y1="273" x2="494" y2="128" stroke="red"
+                    stroke-width="2"></line>
+                <line #xsmallaline1 id="xsmallaline1" _ngcontent-rhx-c118="" x1="494" y1="128" x2="700" y2="128" stroke="red"
+                    stroke-width="2"></line>
+                <g>
+                    <rect #xsmallarect id="xsmallarect" x="700" y="123" width="145" height="20" rx="10px" ry="10px" stroke="red"
+                        fill="transparent" stroke-width="2"></rect>
+                    <text #xsmallatext id="xsmallatext" x="703" y="137" font-family="Verdana" font-size="17" fill="blue">solar
+                        panels busgrid</text>
+                </g>
+        
+                <circle #xsmallbcircle id="xsmallbcircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="434" cy="304" r="10"
+                    fill="red"></circle>
+                <line #xsmallbline id="xsmallbline" _ngcontent-mwk-c118="" x1="434" y1="304" x2="516" y2="401" stroke="red"
+                    stroke-width="2"></line>
+                <line #xsmallbline1 id="xsmallbline1" _ngcontent-mwk-c118="" x1="516" y1="401" x2="700" y2="401" stroke="red"
+                    stroke-width="2"></line>
+                <g>
+                    <rect #xsmallbrect id="xsmallbrect" x="700" y="389" width="170" height="20" rx="10px" ry="10px" stroke="red"
+                        fill="transparent" stroke-width="2"></rect>
+                    <text #xsmallbtext id="xsmallbtext" x="703" y="403" font-family="Verdana" font-size="17"
+                        fill="blue">encapsulated solar cells</text>
+                </g>
+        
+                <circle #xsmallcdefg1circle id="xsmallcdefg1circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="602"
+                    cy="285" r="10" fill="red"></circle>
+                <line #xsmallcdefg1line id="xsmallcdefg1line" _ngcontent-mwk-c118="" x1="602" y1="285" x2="582" y2="224"
+                    stroke="red" stroke-width="2"></line>
+                <circle #xsmallcdefg2circle id="xsmallcdefg2circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="529"
+                    cy="220" r="10" fill="red"></circle>
+                <line #xsmallcdefg2line id="xsmallcdefg2line" _ngcontent-mwk-c118="" x1="529" y1="220" x2="582" y2="225"
+                    stroke="red" stroke-width="2"></line>
+                <circle #xsmallcdefg3circle id="xsmallcdefg3circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="568"
+                    cy="373" r="10" fill="red"></circle>
+                <line #xsmallcdefg3line id="xsmallcdefg3line" _ngcontent-mwk-c118="" x1="568" y1="373" x2="582" y2="224"
+                    stroke="red" stroke-width="2"></line>
+                <circle #xsmallcdefg4circle id="xsmallcdefg4circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="641"
+                    cy="217" r="10" fill="red"></circle>
+                <line #xsmallcdefg4line id="xsmallcdefg4line" _ngcontent-mwk-c118="" x1="641" y1="217" x2="583" y2="224"
+                    stroke="red" stroke-width="2"></line>
+                <circle #xsmallcdefg5circle id="xsmallcdefg5circle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="538"
+                    cy="181" r="10" fill="red"></circle>
+                <line #xsmallcdefg5line id="xsmallcdefg5line" _ngcontent-mwk-c118="" x1="538" y1="181" x2="581" y2="224"
+                    stroke="red" stroke-width="2"></line>
+                <line #xsmallcdefg6line id="xsmallcdefg6line" _ngcontent-mwk-c118="" x1="581" y1="224" x2="595" y2="180"
+                    stroke="red" stroke-width="2"></line>
+                <line #xsmallcdefg7line id="xsmallcdefg7line" _ngcontent-mwk-c118="" x1="595" y1="180" x2="700" y2="180"
+                    stroke="red" stroke-width="2"></line>
+                <g>
+                    <rect #xsmallcdefgrect _ngcontent-jcr-c118="" id="xsmallcdefgrect" x="700" y="170" width="160" height="20"
+                        rx="10px" ry="10px" stroke="red" fill="transparent" stroke-width="2"></rect>
+                    <text #xsmallcdefgtext _ngcontent-jcr-c118="" id="xsmallcdefgtext" x="705" y="186" font-family="Verdana"
+                        font-size="17" fill="blue">MME electric solzars</text>
+                </g>
+        
+                <circle #xsmallhcircle id="xsmallhcircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="83" cy="295" r="10"
+                    fill="red"></circle>
+                <line #xsmallhline id="xsmallhline" _ngcontent-mwk-c118="" x1="83" y1="295" x2="351" y2="449" stroke="red"
+                    stroke-width="2"></line>
+                <circle #xsmallicircle id="xsmallicircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="103" cy="361" r="10"
+                    fill="red"></circle>
+                <line #xsmalliline id="xsmalliline" _ngcontent-mwk-c118="" x1="103" y1="361" x2="351" y2="449" stroke="red"
+                    stroke-width="2"></line>
+                <circle #xsmalljcircle id="xsmalljcircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="351" cy="403" r="10"
+                    fill="red"></circle>
+                <line #xsmalljline id="xsmalljline" _ngcontent-mwk-c118="" x1="351" y1="403" x2="351" y2="449" stroke="red"
+                    stroke-width="2"></line>
+                <line #xsmallhijline id="xsmallhijline" _ngcontent-mwk-c118="" x1="351" y1="449" x2="700" y2="449" stroke="red"
+                    stroke-width="2"></line>
+                <g>
+                    <rect #xsmallhijrect _ngcontent-jcr-c118="" id="xsmallhijrect" x="700" y="437" width="160" height="20"
+                        rx="10px" ry="10px" stroke="red" fill="transparent" stroke-width="2"></rect>
+                    <text #xsmallhijtext _ngcontent-jcr-c118="" id="xsmallhijtext" x="705" y="452" font-family="Verdana"
+                        font-size="17" fill="blue">GTInverter & holders</text>
+                </g>
+        
+                <circle #xsmallkcircle id="xsmallkcircle" _ngcontent-mwk-c118="" _ngcontent-gna-c118="" cx="151" cy="85" r="10"
+                    fill="red"></circle>
+                <line #xsmallkline id="xsmallkline" _ngcontent-mwk-c118="" x1="151" y1="85" x2="700" y2="85" stroke="red"
+                    stroke-width="2"></line>
+                <g>
+                    <rect #xsmallkrect _ngcontent-jcr-c118="" id="xsmallkrect" x="700" y="75" width="180" height="20" rx="10px"
+                        ry="10px" stroke="red" fill="transparent" stroke-width="2"></rect>
+                    <text #xsmallktext _ngcontent-jcr-c118="" id="xsmallktext" x="705" y="90" font-family="Verdana"
+                        font-size="17" fill="blue">Wilmington Clampmeter</text>
+                </g>
+        
+                <g>
+                    <rect (click)="xsmallshowall(xsmallacircle,xsmallaline,xsmallaline1,xsmallarect,xsmallatext,xsmallbcircle,xsmallbline,xsmallbline1,xsmallbrect,xsmallbtext,
+                    xsmallcdefg1circle,xsmallcdefg1line,xsmallcdefg2circle,xsmallcdefg2line,xsmallcdefg3circle,xsmallcdefg3line,xsmallcdefg4circle,
+                    xsmallcdefg4line,xsmallcdefg5circle,xsmallcdefg5line,xsmallcdefg6line,xsmallcdefg7line,xsmallcdefgrect,xsmallcdefgtext,
+                    xsmallhcircle,xsmallhline,xsmallicircle,xsmalliline,xsmalljcircle,xsmalljline,xsmallhijline,xsmallhijrect,xsmallhijtext,
+                    xsmallkcircle,xsmallkline,xsmallkrect,xsmallktext)" #showallrect _ngcontent-seo-c118=""
+                        _ngcontent-jcr-c118="" id="xsmallshowallrect" x="593" y="25" width="68" height="20" rx="10px" ry="10px"
+                        stroke="black" fill="transparent" stroke-width="2"></rect>
+                    <text (click)="xsmallshowall(xsmallacircle,xsmallaline,xsmallaline1,xsmallarect,xsmallatext,xsmallbcircle,xsmallbline,xsmallbline1,xsmallbrect,xsmallbtext,
+                    xsmallcdefg1circle,xsmallcdefg1line,xsmallcdefg2circle,xsmallcdefg2line,xsmallcdefg3circle,xsmallcdefg3line,xsmallcdefg4circle,
+                    xsmallcdefg4line,xsmallcdefg5circle,xsmallcdefg5line,xsmallcdefg6line,xsmallcdefg7line,xsmallcdefgrect,xsmallcdefgtext,
+                    xsmallhcircle,xsmallhline,xsmallicircle,xsmalliline,xsmalljcircle,xsmalljline,xsmallhijline,xsmallhijrect,xsmallhijtext,
+                    xsmallkcircle,xsmallkline,xsmallkrect,xsmallktext)" #showalltext _ngcontent-seo-c118=""
+                        _ngcontent-jcr-c118="" id="xsmallshowalltext" x="598" y="41" font-family="Verdana" font-size="17"
+                        fill="black">show all</text>
+                </g>
+            </svg>
+            <img #xsmallmatcardimage src="../../assets/SolarPanelParts.jpg" mat-card-image>
+            <div (click)="xsmallmakeAvisible(xsmallacircle,xsmallaline,xsmallaline1,xsmallarect,xsmallatext,xsmallbcircle,xsmallbline,xsmallbline1,xsmallbrect,xsmallbtext,
+            xsmallcdefg1circle,xsmallcdefg1line,xsmallcdefg2circle,xsmallcdefg2line,xsmallcdefg3circle,xsmallcdefg3line,xsmallcdefg4circle,
+            xsmallcdefg4line,xsmallcdefg5circle,xsmallcdefg5line,xsmallcdefg6line,xsmallcdefg7line,xsmallcdefgrect,xsmallcdefgtext,
+            xsmallhcircle,xsmallhline,xsmallicircle,xsmalliline,xsmalljcircle,xsmalljline,xsmallhijline,xsmallhijrect,xsmallhijtext,
+            xsmallkcircle,xsmallkline,xsmallkrect,xsmallktext)" class="xsmalldivfora"></div>
+        
+            <div (click)="xsmallmakeBvisible(xsmallacircle,xsmallaline,xsmallaline1,xsmallarect,xsmallatext,xsmallbcircle,xsmallbline,xsmallbline1,xsmallbrect,xsmallbtext,
+            xsmallcdefg1circle,xsmallcdefg1line,xsmallcdefg2circle,xsmallcdefg2line,xsmallcdefg3circle,xsmallcdefg3line,xsmallcdefg4circle,
+            xsmallcdefg4line,xsmallcdefg5circle,xsmallcdefg5line,xsmallcdefg6line,xsmallcdefg7line,xsmallcdefgrect,xsmallcdefgtext,
+            xsmallhcircle,xsmallhline,xsmallicircle,xsmalliline,xsmalljcircle,xsmalljline,xsmallhijline,xsmallhijrect,xsmallhijtext,
+            xsmallkcircle,xsmallkline,xsmallkrect,xsmallktext)" class="xsmalldivforb"></div>
+        
+            <div (click)="xsmalltogglecdefg(xsmallacircle,xsmallaline,xsmallaline1,xsmallarect,xsmallatext,xsmallbcircle,xsmallbline,xsmallbline1,xsmallbrect,xsmallbtext,
+            xsmallcdefg1circle,xsmallcdefg1line,xsmallcdefg2circle,xsmallcdefg2line,xsmallcdefg3circle,xsmallcdefg3line,xsmallcdefg4circle,
+            xsmallcdefg4line,xsmallcdefg5circle,xsmallcdefg5line,xsmallcdefg6line,xsmallcdefg7line,xsmallcdefgrect,xsmallcdefgtext,
+            xsmallhcircle,xsmallhline,xsmallicircle,xsmalliline,xsmalljcircle,xsmalljline,xsmallhijline,xsmallhijrect,xsmallhijtext,
+            xsmallkcircle,xsmallkline,xsmallkrect,xsmallktext)" class="xsmallcdefg1"></div>
+            <div (click)="xsmalltogglecdefg(xsmallacircle,xsmallaline,xsmallaline1,xsmallarect,xsmallatext,xsmallbcircle,xsmallbline,xsmallbline1,xsmallbrect,xsmallbtext,
+            xsmallcdefg1circle,xsmallcdefg1line,xsmallcdefg2circle,xsmallcdefg2line,xsmallcdefg3circle,xsmallcdefg3line,xsmallcdefg4circle,
+            xsmallcdefg4line,xsmallcdefg5circle,xsmallcdefg5line,xsmallcdefg6line,xsmallcdefg7line,xsmallcdefgrect,xsmallcdefgtext,
+            xsmallhcircle,xsmallhline,xsmallicircle,xsmalliline,xsmalljcircle,xsmalljline,xsmallhijline,xsmallhijrect,xsmallhijtext,
+            xsmallkcircle,xsmallkline,xsmallkrect,xsmallktext)" class="xsmallcdefg2"></div>
+            <div (click)="xsmalltogglecdefg(xsmallacircle,xsmallaline,xsmallaline1,xsmallarect,xsmallatext,xsmallbcircle,xsmallbline,xsmallbline1,xsmallbrect,xsmallbtext,
+            xsmallcdefg1circle,xsmallcdefg1line,xsmallcdefg2circle,xsmallcdefg2line,xsmallcdefg3circle,xsmallcdefg3line,xsmallcdefg4circle,
+            xsmallcdefg4line,xsmallcdefg5circle,xsmallcdefg5line,xsmallcdefg6line,xsmallcdefg7line,xsmallcdefgrect,xsmallcdefgtext,
+            xsmallhcircle,xsmallhline,xsmallicircle,xsmalliline,xsmalljcircle,xsmalljline,xsmallhijline,xsmallhijrect,xsmallhijtext,
+            xsmallkcircle,xsmallkline,xsmallkrect,xsmallktext)" class="xsmallcdefg3"></div>
+            <div (click)="xsmalltogglecdefg(xsmallacircle,xsmallaline,xsmallaline1,xsmallarect,xsmallatext,xsmallbcircle,xsmallbline,xsmallbline1,xsmallbrect,xsmallbtext,
+            xsmallcdefg1circle,xsmallcdefg1line,xsmallcdefg2circle,xsmallcdefg2line,xsmallcdefg3circle,xsmallcdefg3line,xsmallcdefg4circle,
+            xsmallcdefg4line,xsmallcdefg5circle,xsmallcdefg5line,xsmallcdefg6line,xsmallcdefg7line,xsmallcdefgrect,xsmallcdefgtext,
+            xsmallhcircle,xsmallhline,xsmallicircle,xsmalliline,xsmalljcircle,xsmalljline,xsmallhijline,xsmallhijrect,xsmallhijtext,
+            xsmallkcircle,xsmallkline,xsmallkrect,xsmallktext)" class="xsmallcdefg4"></div>
+            <div (click)="xsmalltogglecdefg(xsmallacircle,xsmallaline,xsmallaline1,xsmallarect,xsmallatext,xsmallbcircle,xsmallbline,xsmallbline1,xsmallbrect,xsmallbtext,
+            xsmallcdefg1circle,xsmallcdefg1line,xsmallcdefg2circle,xsmallcdefg2line,xsmallcdefg3circle,xsmallcdefg3line,xsmallcdefg4circle,
+            xsmallcdefg4line,xsmallcdefg5circle,xsmallcdefg5line,xsmallcdefg6line,xsmallcdefg7line,xsmallcdefgrect,xsmallcdefgtext,
+            xsmallhcircle,xsmallhline,xsmallicircle,xsmalliline,xsmalljcircle,xsmalljline,xsmallhijline,xsmallhijrect,xsmallhijtext,
+            xsmallkcircle,xsmallkline,xsmallkrect,xsmallktext)" class="xsmallcdefg5"></div>
+        
+            <div (click)="xsmalltogglehij(xsmallacircle,xsmallaline,xsmallaline1,xsmallarect,xsmallatext,xsmallbcircle,xsmallbline,xsmallbline1,xsmallbrect,xsmallbtext,
+            xsmallcdefg1circle,xsmallcdefg1line,xsmallcdefg2circle,xsmallcdefg2line,xsmallcdefg3circle,xsmallcdefg3line,xsmallcdefg4circle,
+            xsmallcdefg4line,xsmallcdefg5circle,xsmallcdefg5line,xsmallcdefg6line,xsmallcdefg7line,xsmallcdefgrect,xsmallcdefgtext,
+            xsmallhcircle,xsmallhline,xsmallicircle,xsmalliline,xsmalljcircle,xsmalljline,xsmallhijline,xsmallhijrect,xsmallhijtext,
+            xsmallkcircle,xsmallkline,xsmallkrect,xsmallktext)" class="xsmallhij1"></div>
+            <div (click)="xsmalltogglehij(xsmallacircle,xsmallaline,xsmallaline1,xsmallarect,xsmallatext,xsmallbcircle,xsmallbline,xsmallbline1,xsmallbrect,xsmallbtext,
+            xsmallcdefg1circle,xsmallcdefg1line,xsmallcdefg2circle,xsmallcdefg2line,xsmallcdefg3circle,xsmallcdefg3line,xsmallcdefg4circle,
+            xsmallcdefg4line,xsmallcdefg5circle,xsmallcdefg5line,xsmallcdefg6line,xsmallcdefg7line,xsmallcdefgrect,xsmallcdefgtext,
+            xsmallhcircle,xsmallhline,xsmallicircle,xsmalliline,xsmalljcircle,xsmalljline,xsmallhijline,xsmallhijrect,xsmallhijtext,
+            xsmallkcircle,xsmallkline,xsmallkrect,xsmallktext)" class="xsmallhij2"></div>
+            <div (click)="xsmalltogglehij(xsmallacircle,xsmallaline,xsmallaline1,xsmallarect,xsmallatext,xsmallbcircle,xsmallbline,xsmallbline1,xsmallbrect,xsmallbtext,
+            xsmallcdefg1circle,xsmallcdefg1line,xsmallcdefg2circle,xsmallcdefg2line,xsmallcdefg3circle,xsmallcdefg3line,xsmallcdefg4circle,
+            xsmallcdefg4line,xsmallcdefg5circle,xsmallcdefg5line,xsmallcdefg6line,xsmallcdefg7line,xsmallcdefgrect,xsmallcdefgtext,
+            xsmallhcircle,xsmallhline,xsmallicircle,xsmalliline,xsmalljcircle,xsmalljline,xsmallhijline,xsmallhijrect,xsmallhijtext,
+            xsmallkcircle,xsmallkline,xsmallkrect,xsmallktext)" class="xsmallhij3"></div>
+        
+            <div (click)="xsmalltogglek(xsmallacircle,xsmallaline,xsmallaline1,xsmallarect,xsmallatext,xsmallbcircle,xsmallbline,xsmallbline1,xsmallbrect,xsmallbtext,
+            xsmallcdefg1circle,xsmallcdefg1line,xsmallcdefg2circle,xsmallcdefg2line,xsmallcdefg3circle,xsmallcdefg3line,xsmallcdefg4circle,
+            xsmallcdefg4line,xsmallcdefg5circle,xsmallcdefg5line,xsmallcdefg6line,xsmallcdefg7line,xsmallcdefgrect,xsmallcdefgtext,
+            xsmallhcircle,xsmallhline,xsmallicircle,xsmalliline,xsmalljcircle,xsmalljline,xsmallhijline,xsmallhijrect,xsmallhijtext,
+            xsmallkcircle,xsmallkline,xsmallkrect,xsmallktext)" class="xsmalldivfork"></div>
+    </mat-grid-tile>
+</mat-grid-list>
