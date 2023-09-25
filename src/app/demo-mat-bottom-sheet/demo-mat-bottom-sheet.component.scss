@@ -2,7 +2,7 @@
     height: 200px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
 }
 
@@ -20,6 +20,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 32px;
+    margin-top: 33px;
 }
 
 .mat-icon{

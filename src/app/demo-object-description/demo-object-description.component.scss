@@ -260,6 +260,9 @@ svg {
         max-height: 100%;
         box-shadow: 0 4px 8px 0 rgb(0 0 0 / 31%), 0 6px 20px 0 rgb(0 0 0 / 27%);
         margin: 0px;
+        position: absolute;
+        top: 156px;
+        left: 0px;
     }
 
     svg {
@@ -333,9 +336,9 @@ svg {
         background-color: chartreuse;
         border-radius: 10px;
         position: absolute;
-        top: 265px;
-        left: 310px;
-        opacity: 0;
+        top: 241px;
+        left: 175px;
+        opacity: 1;
         cursor: pointer;
     }
 

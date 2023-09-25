@@ -340,7 +340,7 @@ export class DemoObjectDescriptionComponent implements OnInit {
     modalcontent.style.display = "none";
   }
 
-  xsmallshowall(xsmallacircle: HTMLElement, xsmallaline: HTMLElement, xsmallaline1: HTMLElement, xsmallarect: HTMLElement, xsmallatext: HTMLElement, xsmallbcircle: HTMLElement, xsmallbline: HTMLElement, xsmallbline1: HTMLElement, xsmallbrect: HTMLElement, xsmallbtext: HTMLElement,
+  xsmallshowall(xsmallacircle: HTMLElement, xsmallaline: HTMLElement, xsmallarect: HTMLElement, xsmallatext: HTMLElement, xsmallbcircle: HTMLElement, xsmallbline: HTMLElement, xsmallbline1: HTMLElement, xsmallbrect: HTMLElement, xsmallbtext: HTMLElement,
     xsmallcdefg1circle: HTMLElement, xsmallcdefg1line: HTMLElement, xsmallcdefg2circle: HTMLElement, xsmallcdefg2line: HTMLElement, xsmallcdefg3circle: HTMLElement, xsmallcdefg3line: HTMLElement, xsmallcdefg4circle: HTMLElement,
     xsmallcdefg4line: HTMLElement, xsmallcdefg5circle: HTMLElement, xsmallcdefg5line: HTMLElement, xsmallcdefg6line: HTMLElement, xsmallcdefg7line: HTMLElement, xsmallcdefgrect: HTMLElement, xsmallcdefgtext: HTMLElement,
     xsmallhcircle: HTMLElement, xsmallhline: HTMLElement, xsmallicircle: HTMLElement, xsmalliline: HTMLElement, xsmalljcircle: HTMLElement, xsmalljline: HTMLElement, xsmallhijline: HTMLElement, xsmallhijrect: HTMLElement, xsmallhijtext: HTMLElement,
@@ -352,7 +352,6 @@ export class DemoObjectDescriptionComponent implements OnInit {
 
     xsmallacircle.style.visibility = 'visible';
     xsmallaline.style.visibility = 'visible';
-    xsmallaline1.style.visibility = 'visible';
     xsmallarect.style.visibility = 'visible';
     xsmallatext.style.visibility = 'visible';
 
@@ -388,55 +387,61 @@ export class DemoObjectDescriptionComponent implements OnInit {
     xsmallhijtext.style.visibility = 'visible';
   }
 
-  xsmallmakeAvisible(xsmallacircle: HTMLElement, xsmallaline: HTMLElement, xsmallaline1: HTMLElement, xsmallarect: HTMLElement, xsmallatext: HTMLElement, xsmallbcircle: HTMLElement, xsmallbline: HTMLElement, xsmallbline1: HTMLElement, xsmallbrect: HTMLElement, xsmallbtext: HTMLElement,
-    xsmallcdefg1circle: HTMLElement, xsmallcdefg1line: HTMLElement, xsmallcdefg2circle: HTMLElement, xsmallcdefg2line: HTMLElement, xsmallcdefg3circle: HTMLElement, xsmallcdefg3line: HTMLElement, xsmallcdefg4circle: HTMLElement,
-    xsmallcdefg4line: HTMLElement, xsmallcdefg5circle: HTMLElement, xsmallcdefg5line: HTMLElement, xsmallcdefg6line: HTMLElement, xsmallcdefg7line: HTMLElement, xsmallcdefgrect: HTMLElement, xsmallcdefgtext: HTMLElement,
-    xsmallhcircle: HTMLElement, xsmallhline: HTMLElement, xsmallicircle: HTMLElement, xsmalliline: HTMLElement, xsmalljcircle: HTMLElement, xsmalljline: HTMLElement, xsmallhijline: HTMLElement, xsmallhijrect: HTMLElement, xsmallhijtext: HTMLElement,
-    xsmallkcircle: HTMLElement, xsmallkline: HTMLElement, xsmallkrect: HTMLElement, xsmallktext: HTMLElement) {
+  xsmallmakeAvisible(xsmallacircle: HTMLElement,xsmallaline: HTMLElement,xsmallarect: HTMLElement,xsmallatext: HTMLElement){
     xsmallacircle.style.visibility = 'visible';
     xsmallaline.style.visibility = 'visible';
-    xsmallaline1.style.visibility = 'visible';
     xsmallarect.style.visibility = 'visible';
     xsmallatext.style.visibility = 'visible';
-
-    xsmallbcircle.style.visibility = 'hidden';
-    xsmallbline.style.visibility = 'hidden';
-    xsmallbline1.style.visibility = 'hidden';
-    xsmallbrect.style.visibility = 'hidden';
-    xsmallbtext.style.visibility = 'hidden';
-
-    xsmallcdefg1circle.style.visibility = 'hidden';
-    xsmallcdefg1line.style.visibility = 'hidden';
-    xsmallcdefg2circle.style.visibility = 'hidden';
-    xsmallcdefg2line.style.visibility = 'hidden';
-    xsmallcdefg3circle.style.visibility = 'hidden';
-    xsmallcdefg3line.style.visibility = 'hidden';
-    xsmallcdefg4circle.style.visibility = 'hidden';
-    xsmallcdefg4line.style.visibility = 'hidden';
-    xsmallcdefg5circle.style.visibility = 'hidden';
-    xsmallcdefg5line.style.visibility = 'hidden';
-    xsmallcdefg6line.style.visibility = 'hidden';
-    xsmallcdefg7line.style.visibility = 'hidden';
-    xsmallcdefgrect.style.visibility = 'hidden';
-    xsmallcdefgtext.style.visibility = 'hidden';
-
-    xsmallhcircle.style.visibility = 'hidden';
-    xsmallhline.style.visibility = 'hidden';
-    xsmallicircle.style.visibility = 'hidden';
-    xsmalliline.style.visibility = 'hidden';
-    xsmalljcircle.style.visibility = 'hidden';
-    xsmalljline.style.visibility = 'hidden';
-    xsmallhijline.style.visibility = 'hidden';
-    xsmallhijrect.style.visibility = 'hidden';
-    xsmallhijtext.style.visibility = 'hidden';
-
-    xsmallkcircle.style.visibility = 'hidden';
-    xsmallkline.style.visibility = 'hidden';
-    xsmallkrect.style.visibility = 'hidden';
-    xsmallktext.style.visibility = 'hidden';
   }
 
-  xsmallmakeBvisible(xsmallacircle: HTMLElement, xsmallaline: HTMLElement, xsmallaline1: HTMLElement, xsmallarect: HTMLElement, xsmallatext: HTMLElement, xsmallbcircle: HTMLElement, xsmallbline: HTMLElement, xsmallbline1: HTMLElement, xsmallbrect: HTMLElement, xsmallbtext: HTMLElement,
+  // xsmallmakeAvisible(xsmallacircle: HTMLElement, xsmallaline: HTMLElement, xsmallarect: HTMLElement, xsmallatext: HTMLElement, xsmallbcircle: HTMLElement, xsmallbline: HTMLElement, xsmallbline1: HTMLElement, xsmallbrect: HTMLElement, xsmallbtext: HTMLElement,
+  //   xsmallcdefg1circle: HTMLElement, xsmallcdefg1line: HTMLElement, xsmallcdefg2circle: HTMLElement, xsmallcdefg2line: HTMLElement, xsmallcdefg3circle: HTMLElement, xsmallcdefg3line: HTMLElement, xsmallcdefg4circle: HTMLElement,
+  //   xsmallcdefg4line: HTMLElement, xsmallcdefg5circle: HTMLElement, xsmallcdefg5line: HTMLElement, xsmallcdefg6line: HTMLElement, xsmallcdefg7line: HTMLElement, xsmallcdefgrect: HTMLElement, xsmallcdefgtext: HTMLElement,
+  //   xsmallhcircle: HTMLElement, xsmallhline: HTMLElement, xsmallicircle: HTMLElement, xsmalliline: HTMLElement, xsmalljcircle: HTMLElement, xsmalljline: HTMLElement, xsmallhijline: HTMLElement, xsmallhijrect: HTMLElement, xsmallhijtext: HTMLElement,
+  //   xsmallkcircle: HTMLElement, xsmallkline: HTMLElement, xsmallkrect: HTMLElement, xsmallktext: HTMLElement) {
+  //   xsmallacircle.style.visibility = 'visible';
+  //   xsmallaline.style.visibility = 'visible';
+  //   xsmallarect.style.visibility = 'visible';
+  //   xsmallatext.style.visibility = 'visible';
+
+  //   xsmallbcircle.style.visibility = 'hidden';
+  //   xsmallbline.style.visibility = 'hidden';
+  //   xsmallbline1.style.visibility = 'hidden';
+  //   xsmallbrect.style.visibility = 'hidden';
+  //   xsmallbtext.style.visibility = 'hidden';
+
+  //   xsmallcdefg1circle.style.visibility = 'hidden';
+  //   xsmallcdefg1line.style.visibility = 'hidden';
+  //   xsmallcdefg2circle.style.visibility = 'hidden';
+  //   xsmallcdefg2line.style.visibility = 'hidden';
+  //   xsmallcdefg3circle.style.visibility = 'hidden';
+  //   xsmallcdefg3line.style.visibility = 'hidden';
+  //   xsmallcdefg4circle.style.visibility = 'hidden';
+  //   xsmallcdefg4line.style.visibility = 'hidden';
+  //   xsmallcdefg5circle.style.visibility = 'hidden';
+  //   xsmallcdefg5line.style.visibility = 'hidden';
+  //   xsmallcdefg6line.style.visibility = 'hidden';
+  //   xsmallcdefg7line.style.visibility = 'hidden';
+  //   xsmallcdefgrect.style.visibility = 'hidden';
+  //   xsmallcdefgtext.style.visibility = 'hidden';
+
+  //   xsmallhcircle.style.visibility = 'hidden';
+  //   xsmallhline.style.visibility = 'hidden';
+  //   xsmallicircle.style.visibility = 'hidden';
+  //   xsmalliline.style.visibility = 'hidden';
+  //   xsmalljcircle.style.visibility = 'hidden';
+  //   xsmalljline.style.visibility = 'hidden';
+  //   xsmallhijline.style.visibility = 'hidden';
+  //   xsmallhijrect.style.visibility = 'hidden';
+  //   xsmallhijtext.style.visibility = 'hidden';
+
+  //   xsmallkcircle.style.visibility = 'hidden';
+  //   xsmallkline.style.visibility = 'hidden';
+  //   xsmallkrect.style.visibility = 'hidden';
+  //   xsmallktext.style.visibility = 'hidden';
+  // }
+
+  xsmallmakeBvisible(xsmallacircle: HTMLElement, xsmallaline: HTMLElement, xsmallarect: HTMLElement, xsmallatext: HTMLElement, xsmallbcircle: HTMLElement, xsmallbline: HTMLElement, xsmallbline1: HTMLElement, xsmallbrect: HTMLElement, xsmallbtext: HTMLElement,
     xsmallcdefg1circle: HTMLElement, xsmallcdefg1line: HTMLElement, xsmallcdefg2circle: HTMLElement, xsmallcdefg2line: HTMLElement, xsmallcdefg3circle: HTMLElement, xsmallcdefg3line: HTMLElement, xsmallcdefg4circle: HTMLElement,
     xsmallcdefg4line: HTMLElement, xsmallcdefg5circle: HTMLElement, xsmallcdefg5line: HTMLElement, xsmallcdefg6line: HTMLElement, xsmallcdefg7line: HTMLElement, xsmallcdefgrect: HTMLElement, xsmallcdefgtext: HTMLElement,
     xsmallhcircle: HTMLElement, xsmallhline: HTMLElement, xsmallicircle: HTMLElement, xsmalliline: HTMLElement, xsmalljcircle: HTMLElement, xsmalljline: HTMLElement, xsmallhijline: HTMLElement, xsmallhijrect: HTMLElement, xsmallhijtext: HTMLElement,
@@ -449,7 +454,6 @@ export class DemoObjectDescriptionComponent implements OnInit {
 
     xsmallacircle.style.visibility = 'hidden';
     xsmallaline.style.visibility = 'hidden';
-    xsmallaline1.style.visibility = 'hidden';
     xsmallarect.style.visibility = 'hidden';
     xsmallatext.style.visibility = 'hidden';
 
@@ -484,14 +488,13 @@ export class DemoObjectDescriptionComponent implements OnInit {
     xsmallktext.style.visibility = 'hidden';
   }
 
-  xsmalltogglecdefg(xsmallacircle: HTMLElement, xsmallaline: HTMLElement, xsmallaline1: HTMLElement, xsmallarect: HTMLElement, xsmallatext: HTMLElement, xsmallbcircle: HTMLElement, xsmallbline: HTMLElement, xsmallbline1: HTMLElement, xsmallbrect: HTMLElement, xsmallbtext: HTMLElement,
+  xsmalltogglecdefg(xsmallacircle: HTMLElement, xsmallaline: HTMLElement, xsmallarect: HTMLElement, xsmallatext: HTMLElement, xsmallbcircle: HTMLElement, xsmallbline: HTMLElement, xsmallbline1: HTMLElement, xsmallbrect: HTMLElement, xsmallbtext: HTMLElement,
     xsmallcdefg1circle: HTMLElement, xsmallcdefg1line: HTMLElement, xsmallcdefg2circle: HTMLElement, xsmallcdefg2line: HTMLElement, xsmallcdefg3circle: HTMLElement, xsmallcdefg3line: HTMLElement, xsmallcdefg4circle: HTMLElement,
     xsmallcdefg4line: HTMLElement, xsmallcdefg5circle: HTMLElement, xsmallcdefg5line: HTMLElement, xsmallcdefg6line: HTMLElement, xsmallcdefg7line: HTMLElement, xsmallcdefgrect: HTMLElement, xsmallcdefgtext: HTMLElement,
     xsmallhcircle: HTMLElement, xsmallhline: HTMLElement, xsmallicircle: HTMLElement, xsmalliline: HTMLElement, xsmalljcircle: HTMLElement, xsmalljline: HTMLElement, xsmallhijline: HTMLElement, xsmallhijrect: HTMLElement, xsmallhijtext: HTMLElement,
     xsmallkcircle: HTMLElement, xsmallkline: HTMLElement, xsmallkrect: HTMLElement, xsmallktext: HTMLElement) {
     xsmallacircle.style.visibility = 'hidden';
     xsmallaline.style.visibility = 'hidden';
-    xsmallaline1.style.visibility = 'hidden';
     xsmallarect.style.visibility = 'hidden';
     xsmallatext.style.visibility = 'hidden';
 
@@ -532,7 +535,7 @@ export class DemoObjectDescriptionComponent implements OnInit {
     xsmallktext.style.visibility = 'hidden';
   }
 
-  xsmalltogglehij(xsmallacircle: HTMLElement, xsmallaline: HTMLElement, xsmallaline1: HTMLElement, xsmallarect: HTMLElement, xsmallatext: HTMLElement, xsmallbcircle: HTMLElement, xsmallbline: HTMLElement, xsmallbline1: HTMLElement, xsmallbrect: HTMLElement, xsmallbtext: HTMLElement,
+  xsmalltogglehij(xsmallacircle: HTMLElement, xsmallaline: HTMLElement, xsmallarect: HTMLElement, xsmallatext: HTMLElement, xsmallbcircle: HTMLElement, xsmallbline: HTMLElement, xsmallbline1: HTMLElement, xsmallbrect: HTMLElement, xsmallbtext: HTMLElement,
     xsmallcdefg1circle: HTMLElement, xsmallcdefg1line: HTMLElement, xsmallcdefg2circle: HTMLElement, xsmallcdefg2line: HTMLElement, xsmallcdefg3circle: HTMLElement, xsmallcdefg3line: HTMLElement, xsmallcdefg4circle: HTMLElement,
     xsmallcdefg4line: HTMLElement, xsmallcdefg5circle: HTMLElement, xsmallcdefg5line: HTMLElement, xsmallcdefg6line: HTMLElement, xsmallcdefg7line: HTMLElement, xsmallcdefgrect: HTMLElement, xsmallcdefgtext: HTMLElement,
     xsmallhcircle: HTMLElement, xsmallhline: HTMLElement, xsmallicircle: HTMLElement, xsmalliline: HTMLElement, xsmalljcircle: HTMLElement, xsmalljline: HTMLElement, xsmallhijline: HTMLElement, xsmallhijrect: HTMLElement, xsmallhijtext: HTMLElement,
@@ -549,7 +552,7 @@ export class DemoObjectDescriptionComponent implements OnInit {
 
     xsmallacircle.style.visibility = 'hidden';
     xsmallaline.style.visibility = 'hidden';
-    xsmallaline1.style.visibility = 'hidden';
+
     xsmallarect.style.visibility = 'hidden';
     xsmallatext.style.visibility = 'hidden';
 
@@ -580,7 +583,7 @@ export class DemoObjectDescriptionComponent implements OnInit {
     xsmallktext.style.visibility = 'hidden';
   }
 
-  xsmalltogglek(xsmallacircle: HTMLElement, xsmallaline: HTMLElement, xsmallaline1: HTMLElement, xsmallarect: HTMLElement, xsmallatext: HTMLElement, xsmallbcircle: HTMLElement, xsmallbline: HTMLElement, xsmallbline1: HTMLElement, xsmallbrect: HTMLElement, xsmallbtext: HTMLElement,
+  xsmalltogglek(xsmallacircle: HTMLElement, xsmallaline: HTMLElement, xsmallarect: HTMLElement, xsmallatext: HTMLElement, xsmallbcircle: HTMLElement, xsmallbline: HTMLElement, xsmallbline1: HTMLElement, xsmallbrect: HTMLElement, xsmallbtext: HTMLElement,
     xsmallcdefg1circle: HTMLElement, xsmallcdefg1line: HTMLElement, xsmallcdefg2circle: HTMLElement, xsmallcdefg2line: HTMLElement, xsmallcdefg3circle: HTMLElement, xsmallcdefg3line: HTMLElement, xsmallcdefg4circle: HTMLElement,
     xsmallcdefg4line: HTMLElement, xsmallcdefg5circle: HTMLElement, xsmallcdefg5line: HTMLElement, xsmallcdefg6line: HTMLElement, xsmallcdefg7line: HTMLElement, xsmallcdefgrect: HTMLElement, xsmallcdefgtext: HTMLElement,
     xsmallhcircle: HTMLElement, xsmallhline: HTMLElement, xsmallicircle: HTMLElement, xsmalliline: HTMLElement, xsmalljcircle: HTMLElement, xsmalljline: HTMLElement, xsmallhijline: HTMLElement, xsmallhijrect: HTMLElement, xsmallhijtext: HTMLElement,
@@ -592,7 +595,6 @@ export class DemoObjectDescriptionComponent implements OnInit {
 
     xsmallacircle.style.visibility = 'hidden';
     xsmallaline.style.visibility = 'hidden';
-    xsmallaline1.style.visibility = 'hidden';
     xsmallarect.style.visibility = 'hidden';
     xsmallatext.style.visibility = 'hidden';
 
