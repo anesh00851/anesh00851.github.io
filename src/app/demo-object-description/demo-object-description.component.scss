@@ -275,7 +275,6 @@ svg {
 
     #xsmallacircle,
     #xsmallaline,
-    #xsmallaline1,
     #xsmallarect,
     #xsmallatext {
         visibility: hidden;
@@ -336,9 +335,9 @@ svg {
         background-color: chartreuse;
         border-radius: 10px;
         position: absolute;
-        top: 241px;
+        top: 302px;
         left: 175px;
-        opacity: 1;
+        opacity: 0;
         cursor: pointer;
     }
 
@@ -348,8 +347,8 @@ svg {
         background-color: aqua;
         border-radius: 10px;
         position: absolute;
-        top: 295px;
-        left: 425px;
+        top: 322px;
+        left: 245px;
         opacity: 0;
         cursor: pointer;
     }
@@ -360,8 +359,8 @@ svg {
         background-color: blue;
         border-radius: 10px;
         position: absolute;
-        top: 276px;
-        left: 593px;
+        top: 309px;
+        left: 347px;
         opacity: 0;
         cursor: pointer;
     }
@@ -372,8 +371,8 @@ svg {
         background-color: blueviolet;
         border-radius: 10px;
         position: absolute;
-        top: 211px;
-        left: 520px;
+        top: 271px;
+        left: 303px;
         opacity: 0;
         cursor: pointer;
     }
@@ -385,7 +384,7 @@ svg {
         border-radius: 10px;
         position: absolute;
         top: 364px;
-        left: 559px;
+        left: 326px;
         opacity: 0;
         cursor: pointer;
     }
@@ -396,8 +395,8 @@ svg {
         background-color: chocolate;
         border-radius: 10px;
         position: absolute;
-        top: 208px;
-        left: 632px;
+        top: 268px;
+        left: 371px;
         opacity: 0;
         cursor: pointer;
     }
@@ -408,8 +407,8 @@ svg {
         background-color: crimson;
         border-radius: 10px;
         position: absolute;
-        top: 171px;
-        left: 528px;
+        top: 246px;
+        left: 308px;
         opacity: 0;
         cursor: pointer;
     }
@@ -420,8 +419,8 @@ svg {
         background-color: darkgoldenrod;
         border-radius: 10px;
         position: absolute;
-        top: 287px;
-        left: 74px;
+        top: 318px;
+        left: 31px;
         opacity: 0;
         cursor: pointer;
     }
@@ -432,8 +431,8 @@ svg {
         background-color: darkgreen;
         border-radius: 10px;
         position: absolute;
-        top: 352px;
-        left: 94px;
+        top: 358px;
+        left: 44px;
         opacity: 0;
         cursor: pointer;
     }
@@ -444,8 +443,8 @@ svg {
         background-color: yellow;
         border-radius: 10px;
         position: absolute;
-        top: 394px;
-        left: 342px;
+        top: 382px;
+        left: 196px;
         opacity: 0;
         cursor: pointer;
     }
@@ -456,8 +455,8 @@ svg {
         background-color: violet;
         border-radius: 10px;
         position: absolute;
-        top: 76px;
-        left: 142px;
+        top: 188px;
+        left: 73px;
         opacity: 0;
         cursor: pointer;
     }
