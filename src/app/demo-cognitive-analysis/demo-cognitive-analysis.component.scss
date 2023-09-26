@@ -1,0 +1,121 @@
+.infocontainer {
+    width: 100%;
+    height: 46px;
+    color: green;
+    background-color: aliceblue;
+    position: absolute;
+    z-index: 2;
+}
+
+.outercirclecontainer{
+    width: 100%;
+    height: 100%;
+}
+
+.innercirclecontainer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.innerinfocontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+svg{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.circle{
+    width: 60px;
+    height: 60px;
+    background-color: cornsilk;
+    border: 1px solid;
+    border-radius: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle1{
+    position: absolute;
+    top: 137px;
+    left: 100px;
+}
+
+.circle2{
+    position: absolute;
+    top: 272px;
+    left: 130px;
+}
+
+.circle3{
+    position: absolute;
+    top: 234px;
+    left: 293px;
+}
+
+.circle4{
+    position: absolute;
+    top: 376px;
+    left: 190px;
+}
+
+.circle5{
+    position: absolute;
+    top: 128px;
+    left: 460px;
+}
+
+.circle6{
+    position: absolute;
+    top: 100px;
+    left: 256px;
+}
+
+.circle7{
+    position: absolute;
+    top: 307px;
+    left: 552px;
+}
+
+.circle8{
+    position: absolute;
+    top: 185px;
+    left: 595px;
+}
+
+.circle9{
+    position: absolute;
+    top: 393px;
+    left: 393px;
+}
+
+.circle10{
+    position: absolute;
+    top: 328px;
+    left: 648px;
+}
