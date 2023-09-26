@@ -5,7 +5,7 @@
     </div>
 </div>
 <div *ngIf="currentScreenSize != 'XSmall'" class="outercirclecontainer">
-    <svg #svgref (touchmove)="onsvgmousemove($event)" (touchend)="onsvgmouseup(svgref)" id="svgref" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <svg #svgref (mousemove)="onsvgmousemove($event)" (mouseup)="onsvgmouseup(svgref)" id="svgref" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <g>
             <rect #resultrect id="resultrect" x="487" y="64" width="267" height="25" rx="10px" ry="10px" stroke="green" fill="transparent" stroke-width="2"></rect>
             <text #resulttext id="resulttext" x="487" y="61" font-family="Verdana" font-size="17" fill="black">Result:</text>
@@ -43,21 +43,21 @@
         <polyline [attr.points]="polylinecoordinates" stroke="black" fill="transparent" stroke-width="2"/>
     </svg>
     <div #innercirclecontainer class="innercirclecontainer">
-        <div #circle1 (touchstart)="onmousedownanycircle(circle1)" (touchmove)="xsmallchangecirclecolor($event,circle1,svgref)" class="circle circle1">1</div>
-        <div #circle2 (touchstart)="onmousedownanycircle(circle2)" (touchmove)="xsmallchangecirclecolor($event,circle2,svgref)" class="circle circle2">2</div>
-        <div #circle3 (touchstart)="onmousedownanycircle(circle3)" (touchmove)="xsmallchangecirclecolor($event,circle3,svgref)" class="circle circle3">3</div>
-        <div #circle4 (touchstart)="onmousedownanycircle(circle4)" (touchmove)="xsmallchangecirclecolor($event,circle4,svgref)" class="circle circle4">4</div>
-        <div #circle5 (touchstart)="onmousedownanycircle(circle5)" (touchmove)="xsmallchangecirclecolor($event,circle5,svgref)" class="circle circle5">5</div>
-        <div #circle6 (touchstart)="onmousedownanycircle(circle6)" (touchmove)="xsmallchangecirclecolor($event,circle6,svgref)" class="circle circle6">6</div>
-        <div #circle7 (touchstart)="onmousedownanycircle(circle7)" (touchmove)="xsmallchangecirclecolor($event,circle7,svgref)" class="circle circle7">7</div>
-        <div #circle8 (touchstart)="onmousedownanycircle(circle8)" (touchmove)="xsmallchangecirclecolor($event,circle8,svgref)" class="circle circle8">8</div>
-        <div #circle9 (touchstart)="onmousedownanycircle(circle9)" (touchmove)="xsmallchangecirclecolor($event,circle9,svgref)" class="circle circle9">9</div>
-        <div #circle10 (touchstart)="onmousedownanycircle(circle10)" (touchmove)="xsmallchangecirclecolor($event,circle10,svgref)" class="circle circle10">10</div>
+        <div #circle1 (mousedown)="onmousedownanycircle(circle1)" (mouseover)="changecirclecolor(circle1,svgref)" class="circle circle1">1</div>
+        <div #circle2 (mousedown)="onmousedownanycircle(circle2)" (mouseover)="changecirclecolor(circle2,svgref)" class="circle circle2">2</div>
+        <div #circle3 (mousedown)="onmousedownanycircle(circle3)" (mouseover)="changecirclecolor(circle3,svgref)" class="circle circle3">3</div>
+        <div #circle4 (mousedown)="onmousedownanycircle(circle4)" (mouseover)="changecirclecolor(circle4,svgref)" class="circle circle4">4</div>
+        <div #circle5 (mousedown)="onmousedownanycircle(circle5)" (mouseover)="changecirclecolor(circle5,svgref)" class="circle circle5">5</div>
+        <div #circle6 (mousedown)="onmousedownanycircle(circle6)" (mouseover)="changecirclecolor(circle6,svgref)" class="circle circle6">6</div>
+        <div #circle7 (mousedown)="onmousedownanycircle(circle7)" (mouseover)="changecirclecolor(circle7,svgref)" class="circle circle7">7</div>
+        <div #circle8 (mousedown)="onmousedownanycircle(circle8)" (mouseover)="changecirclecolor(circle8,svgref)" class="circle circle8">8</div>
+        <div #circle9 (mousedown)="onmousedownanycircle(circle9)" (mouseover)="changecirclecolor(circle9,svgref)" class="circle circle9">9</div>
+        <div #circle10 (mousedown)="onmousedownanycircle(circle10)" (mouseover)="changecirclecolor(circle10,svgref)" class="circle circle10">10</div>
     </div>
 </div>
 
 <div *ngIf="currentScreenSize == 'XSmall'" class="outercirclecontainer">
-    <svg #svgref (mousemove)="onsvgmousemove($event)" (mouseup)="onsvgmouseup(svgref)" id="svgref" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <svg #svgref (touchmove)="onsvgmousemove($event)" (touchend)="onsvgmouseup(svgref)" id="svgref" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <g>
             <rect id="resultrect" x="69" y="18" width="226" height="25" rx="10px" ry="10px" stroke="green" fill="transparent" stroke-width="2"></rect>
             <text id="resulttext" x="69" y="14" font-family="Verdana" font-size="17" fill="black">Result:</text>
@@ -85,15 +85,15 @@
         <polyline [attr.points]="polylinecoordinates" stroke="black" fill="transparent" stroke-width="2"/>
     </svg>
     <div #innercirclecontainer class="innercirclecontainer">
-        <div #circle1 (mousedown)="onmousedownanycircle(circle1)" (mouseover)="changecirclecolor(circle1,svgref)" class="xsmallcircle xsmallcircle1">1</div>
-        <div #circle2 (mousedown)="onmousedownanycircle(circle2)" (mouseover)="changecirclecolor(circle2,svgref)" class="xsmallcircle xsmallcircle2">2</div>
-        <div #circle3 (mousedown)="onmousedownanycircle(circle3)" (mouseover)="changecirclecolor(circle3,svgref)" class="xsmallcircle xsmallcircle3">3</div>
-        <div #circle4 (mousedown)="onmousedownanycircle(circle4)" (mouseover)="changecirclecolor(circle4,svgref)" class="xsmallcircle xsmallcircle4">4</div>
-        <div #circle5 (mousedown)="onmousedownanycircle(circle5)" (mouseover)="changecirclecolor(circle5,svgref)" class="xsmallcircle xsmallcircle5">5</div>
-        <div #circle6 (mousedown)="onmousedownanycircle(circle6)" (mouseover)="changecirclecolor(circle6,svgref)" class="xsmallcircle xsmallcircle6">6</div>
-        <div #circle7 (mousedown)="onmousedownanycircle(circle7)" (mouseover)="changecirclecolor(circle7,svgref)" class="xsmallcircle xsmallcircle7">7</div>
-        <div #circle8 (mousedown)="onmousedownanycircle(circle8)" (mouseover)="changecirclecolor(circle8,svgref)" class="xsmallcircle xsmallcircle8">8</div>
-        <div #circle9 (mousedown)="onmousedownanycircle(circle9)" (mouseover)="changecirclecolor(circle9,svgref)" class="xsmallcircle xsmallcircle9">9</div>
-        <div #circle10 (mousedown)="onmousedownanycircle(circle10)" (mouseover)="changecirclecolor(circle10,svgref)" class="xsmallcircle xsmallcircle10">10</div>
+        <div #circle1 (touchstart)="onmousedownanycircle(circle1)" (touchmove)="xsmallchangecirclecolor($event,circle1,svgref)" class="xsmallcircle xsmallcircle1">1</div>
+        <div #circle2 (touchstart)="onmousedownanycircle(circle2)" (touchmove)="xsmallchangecirclecolor($event,circle2,svgref)" class="xsmallcircle xsmallcircle2">2</div>
+        <div #circle3 (touchstart)="onmousedownanycircle(circle3)" (touchmove)="xsmallchangecirclecolor($event,circle3,svgref)" class="xsmallcircle xsmallcircle3">3</div>
+        <div #circle4 (touchstart)="onmousedownanycircle(circle4)" (touchmove)="xsmallchangecirclecolor($event,circle4,svgref)" class="xsmallcircle xsmallcircle4">4</div>
+        <div #circle5 (touchstart)="onmousedownanycircle(circle5)" (touchmove)="xsmallchangecirclecolor($event,circle5,svgref)" class="xsmallcircle xsmallcircle5">5</div>
+        <div #circle6 (touchstart)="onmousedownanycircle(circle6)" (touchmove)="xsmallchangecirclecolor($event,circle6,svgref)" class="xsmallcircle xsmallcircle6">6</div>
+        <div #circle7 (touchstart)="onmousedownanycircle(circle7)" (touchmove)="xsmallchangecirclecolor($event,circle7,svgref)" class="xsmallcircle xsmallcircle7">7</div>
+        <div #circle8 (touchstart)="onmousedownanycircle(circle8)" (touchmove)="xsmallchangecirclecolor($event,circle8,svgref)" class="xsmallcircle xsmallcircle8">8</div>
+        <div #circle9 (touchstart)="onmousedownanycircle(circle9)" (touchmove)="xsmallchangecirclecolor($event,circle9,svgref)" class="xsmallcircle xsmallcircle9">9</div>
+        <div #circle10 (touchstart)="onmousedownanycircle(circle10)" (touchmove)="xsmallchangecirclecolor($event,circle10,svgref)" class="xsmallcircle xsmallcircle10">10</div>
     </div>
 </div>
