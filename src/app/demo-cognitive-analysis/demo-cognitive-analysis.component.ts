@@ -77,6 +77,19 @@ export class DemoCognitiveAnalysisComponent implements OnInit {
     }
   }
 
+  xsmallchangecirclecolor(event:Event,circle: HTMLElement,svgref: HTMLElement) {
+    event.stopPropagation();
+    if (this.togglemouseaction) {
+      circle.style.backgroundColor = 'green';
+      this.circlelist.push(circle.innerText);
+      if (this.circlelist.length == 10) {
+        console.log(this.circlelist.length);
+        this.togglemouseaction = false;
+        svgref.removeEventListener('mousemove', () => { });
+      }
+    }
+  }
+
   removemouselistener(svgref: HTMLElement) {
     this.togglemouseaction = false;
     svgref.removeEventListener('mousemove', () => { });
