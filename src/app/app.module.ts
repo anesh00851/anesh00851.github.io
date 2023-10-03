@@ -20,7 +20,6 @@ import {MatRippleModule} from '@angular/material/core';
 import { DemoManagementHeirarchyComponent } from './demo-management-heirarchy/demo-management-heirarchy.component';
 import { DemoObjectDescriptionComponent } from './demo-object-description/demo-object-description.component';
 import { DemoCognitiveAnalysisComponent } from './demo-cognitive-analysis/demo-cognitive-analysis.component';
-import { DemoGlimpseOfTomorrowComponent } from './demo-glimpse-of-tomorrow/demo-glimpse-of-tomorrow.component';
 import { DemoPageNotFoundComponentComponent } from './demo-page-not-found-component/demo-page-not-found-component.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
@@ -35,9 +34,8 @@ import { DemoMatBottomSheetComponent } from './demo-mat-bottom-sheet/demo-mat-bo
     DemoManagementHeirarchyComponent,
     DemoObjectDescriptionComponent,
     DemoCognitiveAnalysisComponent,
-    DemoGlimpseOfTomorrowComponent,
     DemoPageNotFoundComponentComponent,
-    DemoMatBottomSheetComponent
+    DemoMatBottomSheetComponent,
   ],
   imports: [
     BrowserModule,
